@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+ 
+<!-- Mirrored from yell0wsuit.github.io/html5-games/games/ctrm/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2022 18:17:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8"/>
+  <meta charset="utf-8"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" name="viewport"/>
+  <link rel="icon" type="image/png" href="ctrm.png">
+  <script src="gamepix.js"></script>
+  <script src="modernizr.min.webgl.js"></script>
+  <script src="gamepix-loader.js" type="text/javascript"></script>
+  <title>
+   Cut the Rope: Magic (HTML5 Edition)
+  </title>
+  <style type="text/css">
+   body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        touch-action: none;
+        -ms-touch-action: none;
+        overflow: hidden;
+        background: url(tilebg.jpg);
+        background-repeat:   repeat;
+    }
+
+    canvas {
+        -ms-touch-action: none;
+        touch-action: none;
+        -ms-content-zooming: none;
+        content-zooming: none
+    }
+    
+    .ctrCursor {
+        cursor: url(cursors/cursor.cur), url(cursors/cursor.png), auto
+    }
+
+    #progressScreen {
+        position: fixed;
+        width: 40%;
+        background-color: white;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #myProgress {
+        width: 100%;
+    }
+
+    #myBar {
+        width: 1%;
+        height: 30px;
+        background-color: #04AA6D;
+        transition: 200ms linear;
+        -webkit-transition: 200ms linear;
+    }
+  </style>
+ </head>
+ <body class="ctrCursor">
+  <div id="progressScreen">
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+  </div>
+  <canvas id="ctr2canvas">
+  </canvas>
+  <script>
+//import GamePix from './amePix/src/index.js';
+//window.GamePix = GamePix;
+
+function webgl_detect (e) {
+  if (window.WebGLRenderingContext) {
+    for (var n = document.createElement("canvas"), i = ["webgl", "experimental-webgl", "moz-webgl", "webkit-3d"], t = !1, a = 0; 4 > a; a++) try {
+      if (t = n.getContext(i[a]), t && "function" == typeof t.getParameter) return e ? {
+        name: i[a],
+        gl: t
+      } : !0
+    } catch (o) {}
+    return !1
+  }
+  return !1
+}
+
+function setTheLanguage (e) {
+  var n = ["en", "br", "pt", "es", "nl", "fr", "it", "de", "ja", "tr", "he", "ru"], i = n.indexOf(GamePix.lang()),
+    t = "en";
+  -1 != i && (t = GamePix.lang()), "pt" == t ? GamePix.localStorage.setItem("com.gamepix.ctrmagic.PREFS_LOCALE", "br") : GamePix.localStorage.setItem("com.gamepix.ctrmagic.PREFS_LOCALE", t)
+}
+
+function getScreenSize (e) {
+  function n () {
+    var e = !(window.innerHeight > window.innerWidth);
+    return e
+  }
+
+  var i, t;
+  return isMobile ? n() === !0 ? (t = window.innerHeight, i = t * e, i > window.innerWidth && (i = window.innerWidth, t = window.innerWidth / e)) : (i = window.innerWidth, t = i / e, t > window.innerHeight && (t = window.innerHeight)) : window.innerWidth > window.innerHeight ? (t = window.innerHeight, i = t * e, i > window.innerWidth && (i = window.innerWidth, t = i / e)) : (i = window.innerWidth, t = i / e), [i, t]
+}
+
+function onDocumentLoaded () {
+  var e = getScreenSize(.66), n = function() {
+    var e = getScreenSize(a.ratio()), n = e[0], i = e[1];
+    canvas.style.position = "relative", canvas.style.top = window.innerHeight / 2 + "px", canvas.style.left = window.innerWidth / 2 + "px", canvas.style.marginTop = -1 * (i / 2) + "px", canvas.style.marginLeft = -1 * (n / 2) + "px", canvas.style.width = n + "px", canvas.style.height = i + "px", window.scroll(0, 1)
+  }, i = 0;
+  window.Module = {
+    debug: !1,
+    canvas: canvas,
+    width: e[0],
+    height: e[1],
+    onresize: n,
+    brotli: !1,
+    ping: function(e, n) {GamePix.game.ping(e, n)},
+    progress: function(e, n, a, o) {
+      var r = {bin: .3, datafile: .4, "eval.bin": .2, "module.run": .1};
+      "xmlparser.parse" == e && (i += 1, n = i, a = 7), a == n || 0 == a ? t[e] = 100 * (r[e] || 0) : t[e] = (r[e] || 0) * n / a * 100;
+      var g = 0;
+      for (e in t) g += t[e];
+      GamePix.game.gameLoading(g)
+    },
+    ready: function(e) {GamePix.game.gameLoaded(e)}
+  };
+  var t = {};
+  setTheLanguage(GamePix.lang());
+  var a = new Loader("bin-lock.js", "bin.data.js", window.Module);
+  window.onresize = n
+}
+
+var canvas = document.getElementById("ctr2canvas"),
+  isMobile = function() {return !!/Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Tablet PC|Opera Mini/i.test(navigator.userAgent)}();
+window.addEventListener ? window.addEventListener("click", function() {window.focus()}, !1) : window.attachEvent("onclick", function() {window.focus()}), document.addEventListener("contextmenu", function(e) {e.preventDefault()}, !1), onDocumentLoaded()
+  </script>
+ </body>
+
+<!-- Mirrored from yell0wsuit.github.io/html5-games/games/ctrm/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2022 18:17:16 GMT -->
+</html>

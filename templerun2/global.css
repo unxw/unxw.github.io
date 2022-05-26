@@ -110,12 +110,12 @@ button:focus {
 
 @font-face {
   font-family: 'temple-run-small-caps';
-  src: url("./fonts/temple-run-small-caps.eot");
-  src: url("./fonts/temple-run-small-caps.eot?#iefix") format('embedded-opentype'),
-      url("./fonts/temple-run-small-caps.woff2") format('woff2'),
-      url("./fonts/temple-run-small-caps.woff") format('woff'),
-      url("./fonts/temple-run-small-caps.ttf") format('truetype'),
-      url("./fonts/temple-run-small-caps.svg#temple-run-small-caps") format('svg') ;
+  src: url("fonts/temple-run-small-caps.eot");
+  src: url("fonts/temple-run-small-capsd41d.eot?#iefix") format('embedded-opentype'),
+      url("fonts/temple-run-small-caps.woff2") format('woff2'),
+      url("fonts/temple-run-small-caps.woff") format('woff'),
+      url("fonts/temple-run-small-caps.ttf") format('truetype'),
+      url("fonts/temple-run-small-caps.svg#temple-run-small-caps") format('svg') ;
 }
 
 .label {
