@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link href="dark.css" rel="stylesheet">
+    <title>DS Player</title>
+    <!-- Add hint for search engine -->
+    <meta name="description" content="DS Player is a web emulator for playing NDS and GBA games, designed for iOS(iPhone and iPad) and also workable for other devices.">
+    <meta name="keywords" content="NDS, GBA, iOS, iPhone, iPad, emulator, DS, Safari, online, PWA">
+    <meta name="author" content="44670">
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            cursor: inherit;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        canvas {
+            position: absolute;
+            z-index: 1;
+            image-rendering: pixelated;
+        }
+
+        #msg-layer {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 40vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        #vk-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            touch-action: none;
+            opacity: 0.3;
+        }
+
+        #menu {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            overflow: hidden scroll;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        #menu button {
+            background: transparent;
+        }
+
+        #menu button:active {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        a,
+        a:visited {
+            color: white;
+        }
+
+        .vk-round {
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .vk-round-rect {
+            border-radius: 0.5em;
+            display: inline-block;
+        }
+
+        .vk {
+            color: #000;
+            background-color: #fff;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .vk-touched {}
+
+        .link {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 1px solid #fff;
+            height: 0;
+        }
+    </style>
+    <div id="welcome" class="menu">
+        <h1>DS Player</h1>
+        <div id="loading">Loading...<br> DS Player is a web emulator for playing NDS and GBA games, designed for iOS(iPhone and iPad) and also workable for other devices.
+        </div>
+        <div id="loadrom" hidden>
+            <input id="rom" type="file" hidden>
+            <button style="width:calc(100% - 2em);margin: 1em;" id="btn-choose-file">Choose File (or
+                drag/drop)...</button><br>
+        </div>
+        <p style="color: #888;">
+            This software should not be used to play games you have not legally obtained.<br> This site is in no way associated with any of the vendors of the original game software and hardware.
+            <br>
+        </p>
+        <hr>
+        <p><span id="ver-info"></span><a onclick="whatsNew()" id="whats-new" href="#">What's New</a>&nbsp;|&nbsp;<a href="#" onclick="uiSwitchTo('menu')">⚙ Settings...</a></p>
+        <p id="p-sns">
+            <a href="/gba">GBA Player</a>
+        </p>
+        <p>
+            <a href="https://www.patreon.com/posts/63984675">Help</a>&nbsp;|&nbsp;<a href="#" id="a-gamepad">Gamepad
+                Disconnected</a>
+        </p>
+        <div id="pro" style="background-color: #333">
+        </div>
+        <div id="ios-hint" hidden>
+            Due to iOS Safari limitations, you have to add this page to your <b>Home Screen</b> in order to save your game progress.
+            <p style="text-align: center;">⬇⬇</p>
+        </div>
+        <div id="mac-warning" hidden>
+            WARNING:<br> It looks like you are using macOS.<br> Due to macOS Safari <a href="https://webkit.org/tracking-prevention/">limitations</a>, ALL of you save data will be LOST after 7 days of inactivity.<br> For this reason, it is highly recommended
+            to use a different browser. (For example: <a href="https://www.google.com/chrome/">Chrome</a>)
+        </div>
+    </div>
+    <div id="vk-layer" hidden>
+        <div class="vk-rect vk" data-k="menu" id="vk-menu">Menu</div>
+        <div class="vk-rect vk" data-k="l">L</div>
+        <div class="vk-rect vk" data-k="r">R</div>
+        <div class="vk-round vk" data-k="a">A</div>
+        <div class="vk-round vk" data-k="b">B</div>
+        <div class="vk-round vk" data-k="x">X</div>
+        <div class="vk-round vk" data-k="y">Y</div>
+        <div class="vk-rect vk" data-k="select">SE</div>
+        <div class="vk-rect vk" data-k="start">ST</div>
+        <div class="vk-round vk" data-k="stick" id="vk-stick"></div>
+        <div id="vk-dpad-1" class="vk vk-round-rect"></div>
+        <div id="vk-dpad-2" class="vk vk-round-rect"></div>
+    </div>
+    <div style="z-index: 2;position: absolute;bottom: 20px;" id="fps"></div>
+    <div id="msg-layer" hidden>
+        <p id="msg-text"></p>
+    </div>
+    <div id="menu" hidden>
+        <button onclick="uiMenuBack()">❮ Back</button>
+        <hr>
+        <input type="checkbox" id="power-save">
+        <label for="power-save">Power saving mode (iOS's low battery mode should be off)</label><br>
+        <input type="checkbox" id="vk-enabled">
+        <label for="vk-enabled">Virtual keyboard</label><br>
+        <input type="checkbox" id="cfg-mute-sound">
+        <label for="cfg-mute-sound">Mute sound</label><br>
+        <hr>
+        <div id="menu-savegame" hidden>
+            <input type="file" id="restore-file" onchange="uiSaveRestore()" hidden> Save Data: <button onclick="uiSaveBackup()">↓ Export</button>|<button onclick="$id('restore-file').click()">↑ Import</button><br> You have to save in the game before exporting.<br>
+            <span id="hint-auto-save" hidden><b>Auto-save is enabled</b>, after you saved in the game, wait a few
+                seconds and it will be saved in the app's local storage automatically.</span>
+            <hr>
+        </div>
+    </div>
+    <div id="player" hidden>
+        <canvas id="top" width="256" height="192"></canvas>
+        <canvas id="bottom" width="256" height="192"></canvas>
+    </div>
+    <script src="localforage.js"></script>
+    <script src="pako.min.js"></script>
+    <script src="app.js"></script>
+    <script src="build/nds.js"></script>
+</body>
+
+</html>
