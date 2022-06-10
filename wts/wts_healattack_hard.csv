@@ -1,0 +1,16 @@
+0,CombatZoneResize,170,240,470,391,TLResume
+0,HeartTeleport,320,301
+0,HeartMode,0
+0.2,BoneVRepeat,128,340,70,0,160,50,75
+0,BoneVRepeat,128,230,60,0,160,50,75
+0,BoneVRepeat,512,290,50,2,160,50,75
+0,BoneVRepeat,475,245,141,2,10,16,15
+0,BoneVRepeat,165,245,141,0,10,16,15
+0.6,set,loop,3
+0,sub,loop,$loop,1
+0,gasterblaster,1,0,315,80,315,0,0.3,0.1
+1,gasterblaster,1,640,365,560,365,180,0.3,0.1
+0,gasterblaster,1,640,265,560,265,180,0.3,0.1
+1,jmprelnz,-4,$loop
+0,gasterblaster,1,0,315,80,315,0,0.3,0.1
+1.5,EndAttack,,,,,,

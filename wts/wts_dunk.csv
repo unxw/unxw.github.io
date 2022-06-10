@@ -1,0 +1,158 @@
+0,Cosmetics,Music
+0,SansHead,ClosedEyes
+0,CombatZoneResize,241,226,406,391,TLResume,,,
+0,HeartTeleport,323,308,,,,,,
+0,HeartMode,0
+2,SansHead,Tired1
+0,SansText,huh?,
+0,SansHead,LookLeft
+0,SansText,you're sparing me?,
+0,SansHead,Wink
+0,SansText,that's kind of a big     suprise.,,
+0,SansHead,ClosedEyes
+0,SansText,i also have a suprise     for you...,,
+1,BlackScreen,1,,,,,,,
+0,Sound,Flash,,,,,,,
+1.06666,BlackScreen,0,,,,,,,
+0,Sound,Flash,,,,,,,
+0,SansHead,NoEyes
+0,SansText,and it's not as pleasant      as your's.,,,
+0,SET,gt,0,,,,,,
+0,SET,gin,1,,,,,,
+0,Set,timer,8,
+0,MUL,Ang,$gt,-10,,,,,
+0,COS,X,$Ang,,,,,,
+0,SIN,Y,$Ang,,,,,,
+0,MUL,EndX,$X,150,,,,,
+0,MUL,EndY,$Y,150,,,,,
+0,MUL,X,$EndX,3,,,,,
+0,MUL,Y,$EndY,3,,,,,
+0,ADD,X,$X,320,,,,,
+0,ADD,Y,$Y,306,,,,,
+0,ADD,EndX,$EndX,320,,,,,
+0,ADD,EndY,$EndY,306,,,,,
+0,ADD,Ang,$Ang,180,,,,,
+0,GasterBlaster,0,$X,$Y,$EndX,$EndY,$Ang,$timer,2.5
+0,Sub,timer,$timer,0.06666
+0,ADD,gt,$gt,$gin,,,,,
+0.06666,JMPL,23,$gt,36,,,,,
+0.5,gasterblaster,2,0,0,60,60,56,5,2
+0.1,gasterblaster,2,0,0,50,150,58,4.9,2
+0.1,gasterblaster,2,0,0,150,50,51,4.8,2
+0.5,gasterblaster,2,640,0,580,60,140,4.3,2
+0,bonestab,1,152.5,5,3
+0.1,gasterblaster,2,640,0,590,150,150,4.2,2
+0.1,gasterblaster,2,640,0,490,50,130,4.1,2
+0.3,SansTorso,Shrug
+4.25,HPChange,1
+1,SansSweat,1
+0,SansTorso,Default
+2,SansText,...,,
+0,SansText,you...,,
+0,SansText,you shouldn't be able to..,,
+0,SansText,...,,
+0,SansHead,ClosedEyes
+0,SansSweat,0
+0,SansText,...,,
+2,SansHead,NoEyes
+0,SansText,kid..,,
+0,SansText,do you think this is      funny?,,
+0,SansText,you aren't supposed to        do this you know?,,
+0,SansHead,ClosedEyes
+3,SansHead,Default
+0.5,bonestab,1,152.5,0.5,3
+2,SansHead,NoCare
+2,SansText,you aren't even trying        to hide it anymore,, 
+2.5,SansHead,NoEyes
+2.5,SansHead,LookLeft
+0,SansText,you don't like playing     fair huh?,,
+0,SansText,well..,,
+0,SansText,i won't either then.,,
+0,SansHead,Default
+0,SansText,yeah,,
+0,SansText,thats right,,
+0,SansHead,NoEyes
+0,SansText,you are not going to        have your turn ever,,
+0,SansHead,Default
+0,SansText,...,,
+0,SansText,so get outta here,,,
+0,SansHead,Default
+1,SansHead,Wink
+0,SansText,or don't,,
+0,SansText,we can stand here until   the end of time too,,
+0,SansHead,Default
+0,SansText,i can't kill you and you     can't kill me,,
+0,SansText,capiche?,,
+0,SansHead,Default
+20,SansHead,LookLeft
+0,SansText,huh?,,
+0,SansText,you're still here eh?,,
+0,SansHead,Default
+2,SansText,there's no reason to     continue,,
+0,SansText,so why are you still       here?,,
+5,SansHead,NoEyes
+0,SansText,if you think i'll let you       do THAT trick again,,
+0,SansHead,Default
+0,SansText,then think again,,
+30,SansText,do you really not have    ANYTHING better to do?,,
+0,SansText,you want to just stay      here and do nothing?,,
+0,SansText,isn't that boring?,,
+2.5,SansText,i mean,,
+0,SansText,i do it all the time,,
+60,SansText,i get it now,,
+0,SansText,you keep waiting until i     say something,,
+0,SansText,if i stop talking you will     eventually get bored,,
+0,SansHead,wink
+0,SansText,and QUIT,,
+0,SansHead,Default
+5,SansHead,Tired1
+5,SansHead,Tired2
+5,SansHead,ClosedEyes
+0,Set,CZL,241
+0,Set,CZU,226
+0,Set,CZR,406
+0,Set,CZD,391
+0,SansY,Manual
+0,GetHeartPos,HeartX,HeartY
+0,Add,CZL1,$CZL,14
+0,JMPRELG,3,$HeartX,$CZL1
+0,Sub,CZL,$CZL,1
+0,Sub,CZR,$CZR,1
+0,CombatZoneResize,$CZL,$CZU,$CZR,$CZD
+0,JMPRELL,2,$CZL,30
+0.05,JMPREL,-7
+0,GetHeartPos,HeartX,HeartY
+0,Sub,CZD1,$CZD,14
+0,JMPRELL,3,$HeartY,$CZD1
+0,Add,CZD,$CZD,1
+0,Add,CZU,$CZU,1
+0,CombatZoneResize,$CZL,$CZU,$CZR,$CZD
+0,JMPRELG,2,$CZD,400
+0.05,JMPREL,-7
+0,SansHead,Wink
+0,Set,Timer,20
+0,Sub,Timer,$Timer,1
+0,GetHeartPos,HeartX,HeartY
+0,Sub,CZD1,$CZD,14
+0,JMPRELL,3,$HeartY,$CZD1
+0,Add,CZD,$CZD,1
+0,Add,CZU,$CZU,1
+0,CombatZoneResize,$CZL,$CZU,$CZR,$CZD
+0.05,JMPRELNZ,-7,$Timer
+0,SansHead,BlueEye
+0,SansBody,HandUp
+0,SansSlam,3
+0,CombatZoneResize,$CZL,$CZU,$CZR,391
+0.5,SansSlam,0
+0,SansBody,HandRight
+0,CombatZoneResize,241,226,406,391,TLResume,,,
+0.5,SansSlam,1
+0,SansBody,HandDown
+0.5,SansAnimation,Tired
+0,SansHead,Default
+0.5,HeartMode,0
+0,SansText,i told ya,,
+0,SansText,i wouldn't let you do         that trick on me again,,
+5,SansHead,Tired1
+5,SansHead,Tired2
+5,SansHead,ClosedEyes
