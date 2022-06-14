@@ -1,299 +1,94 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Google</title>
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #dialogText {
-            color: white;
-            background-color: #333333;
-        }
-        
-        #dialogWrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: table;
-            background-color: #EEEEEE;
-        }
-        
-        #dialogWrapCell {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        #mainDialog {
-            max-width: 400px;
-            margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            text-align: left;
-        }
-        #mainDialog > * {
-            padding: 10px 30px;
-        }
-        #passArea {
-            padding: 20px 30px;
-            background-color: white;
-        }
-        #passArea > * {
-            margin: 5px auto;
-        }
-        #pass {
-            width: 100%;
-            height: 40px;
-            font-size: 30px;
-        }
-        
-        #messageWrapper {
-            float: left;
-            vertical-align: middle;
-            line-height: 30px;
-        }
-        
-        .notifyText {
-            display: none;
-        }
-        
-        #invalidPass {
-            color: red;
-        }
-        
-        #success {
-            color: green;
-        }
-        
-        #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
-            float: right;
-            cursor: pointer;
-        }
-        #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #attribution {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-        #attribution, #attribution a {
-            color: #999;
-        }
-        .error {
-            display: none;
-            color: red;
-        }
-    </style>
-  </head>
-  <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <div id="dialogText">Cool, you found this page. What's the code?</div>
-                <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" autofocus>
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Nah mate get outta here💀</span>
-                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Cool but why do you know the password? 🤨</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Go!</button>
-                        <div style="clear: both;"></div>
-                    </div>
-                </div>
-                <div id="securecontext" class="error">
-                    <p>
-                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
-                    </p>
-                </div>
-                <div id="nocrypto" class="error">
-                    <p>
-                        Your web browser appears to be outdated. Please visit this page using a modern browser.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="attribution">
-        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
-    </div>
-    <script>
-    (function() {
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+<link rel=”icon” type=“image/x-icon” href=”https://static1.anpoimages.com/wordpress/wp-content/uploads/2015/10/nexus2cee_Search-Thumb.png?q=50&fit=contain&w=750&h=750&dpr=1.5">
+body {
+  background-image: url('catthatyoucantfindbcausethisisaneastereggandnevergonnagiveyouup.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} 
+  .myDiv {
+border: 3px outset black;
+background-color: lightblue;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<h2>Simple Random Games</h2>
+<a href="https://forms.gle/7Sj7HwSL7RLB4Fmi9"><h3>ASK FOR NEW GAMES HERE</h3></a>
+</div>
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7968007&style=0036&nbdigits=9&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a><p>yooooo, thanks for all the views :D</p>                                    
 
-        var pl = "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";
-        
-        var submitPass = document.getElementById('submitPass');
-        var passEl = document.getElementById('pass');
-        var invalidPassEl = document.getElementById('invalidPass');
-        var trycatcherror = document.getElementById('trycatcherror');
-        var successEl = document.getElementById('success');
-        var contentFrame = document.getElementById('contentFrame');
-        
-        // Sanity checks
+<a href="https://unxw.github.io/flash"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">FLASH GAMES (I ADDED A CRAZY AMMOUNT OF GAMES HERE)</p></a>
+  
+<a href="https://unxw.github.io/warning.html"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Minecraft</p></a>
+                                                                       
+<a href="https://unxw.github.io/temple-run-2/"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Temple Run 2</p></a>
+    
+<a href="https://unxw.github.io/slope-main"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Slope</p></a>
+    
+<a href="https://unxw.github.io/2048"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">2048</p></a>
 
-        if (pl === "") {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
-            return;
-        }
+<a href="https://unxw.github.io/cookie-clicker"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Cookie Clicker</p></a>
 
-        if (!isSecureContext) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#securecontext").style.display = "block";
-            return;
-        }
+<a href="https://unxw.github.io/drift-hunters"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Drift Hunters</p></a>
 
-        if (!crypto.subtle) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#nocrypto").style.display = "block";
-            return;
-        }
-        
-        function str2ab(str) {
-            var ustr = atob(str);
-            var buf = new ArrayBuffer(ustr.length);
-            var bufView = new Uint8Array(buf);
-            for (var i=0, strLen=ustr.length; i < strLen; i++) {
-                bufView[i] = ustr.charCodeAt(i);
-            }
-            return bufView;
-        }
+<a href="https://unxw.github.io/snowbattle"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Snowbattle</p></a>  
 
-        async function deriveKey(salt, password) {
-            const encoder = new TextEncoder()
-            const baseKey = await crypto.subtle.importKey(
-                'raw',
-                encoder.encode(password),
-                'PBKDF2',
-                false,
-                ['deriveKey'],
-            )
-            return await crypto.subtle.deriveKey(
-                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
-                baseKey,
-                { name: 'AES-GCM', length: 256 },
-                true,
-                ['decrypt'],
-            )
-        }
-        
-        async function doSubmit(evt) {
-            submitPass.disabled = true;
-            passEl.disabled = true;
+<a href="https://unxw.github.io/tetris"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Tetris</p></a>  
 
-            let iv, ciphertext, key;
-            
-            try {
-                var unencodedPl = str2ab(pl);
+<a href="https://unxw.github.io/death-run-3d"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Deathrun</p></a>  
 
-                const salt = unencodedPl.slice(0, 32)
-                iv = unencodedPl.slice(32, 32 + 16)
-                ciphertext = unencodedPl.slice(32 + 16)
+<a href="https://unxw.github.io/townscaper"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Towscaper</p></a>
 
-                key = await deriveKey(salt, passEl.value);
-            } catch (e) {
-                trycatcherror.style.display = "inline";
-                console.error(e);
-                return;
-            }
+<a href="https://unxw.github.io/chrome-dino"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Chrome DINO</p></a>
+  
+<a href="https://unxw.github.io/boi.html"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Binding Of Issac (FLASH)</p></a> 
+  
+<a href="https://unxw.github.io/tunnel-rush"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Tunnel Rush</p></a>
+  
+<a href="https://unxw.github.io/fireboyandwatergirl"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Fire Boy and Water Girl</p></a>  
 
-            try {
-                const decryptedArray = new Uint8Array(
-                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
-                );
+<a href="https://unxw.github.io/papaspizza/warning.html"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Papa's Pizzaeria (FLASH)</p></a>
+  
+<a href="https://unxw.github.io/madalinstuntcars2-main"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Some random stunt cars game</p></a>
 
-                let decrypted = new TextDecoder().decode(decryptedArray);
+<a href="https://unxw.github.io/run3"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Run</p></a>
 
-                if (decrypted === "") throw "No data returned";
+<a href="https://unxw.github.io/slope-main"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Slope but different</p></a>
 
-                const basestr = '<base href="." target="_top">';
-                const anchorfixstr = `
-                    <script>
-                        Array.from(document.links).forEach((anchor) => {
-                            const href = anchor.getAttribute("href");
-                            if (href.startsWith("#")) {
-                                anchor.addEventListener("click", function(e) {
-                                    e.preventDefault();
-                                    const targetId = this.getAttribute("href").substring(1);
-                                    const targetEl = document.getElementById(targetId);
-                                    targetEl.scrollIntoView();
-                                });
-                            }
-                        });
-                    <\/script>
-                `;
-                
-                // Set default iframe link targets to _top so all links break out of the iframe
-                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
-                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
-                else decrypted = basestr + decrypted;
+<a href="https://unxw.github.io/stg/sort-the-court.html"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">SORT THE COURT</p></a>
+  
+<a href="https://unxw.github.io/M64js-main"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Super Mario 64</p></a>
 
-                // Fix fragment links
-                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
-                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
-                else decrypted = decrypted + anchorfixstr;
-                
-                contentFrame.srcdoc = decrypted;
-                
-                successEl.style.display = "inline";
-                setTimeout(function() {
-                    dialogWrap.style.display = "none";
-                }, 1000);
-            } catch (e) {
-                invalidPassEl.style.display = "inline";
-                passEl.value = "";
-                submitPass.disabled = false;
-                passEl.disabled = false;
-                console.error(e);
-                return;
-            }
-        }
-        
-        submitPass.onclick = doSubmit;
-        passEl.onkeypress = function(e){
-            if (!e) e = window.event;
-            var keyCode = e.keyCode || e.which;
-            invalidPassEl.style.display = "none";
-            if (keyCode == '13'){
-              // Enter pressed
-              doSubmit();
-              return false;
-            }
-        }
-    })();
-    </script>
-  </body>
-</html>
+ <a href="https://unxw.github.io/game/Athletics.html"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">qwop (should work)</p></a> 
+ 
+<a href="https://unxw.github.io/subway-surfers-unity-main"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Not Subway Surfers</p></a>
+  
+<a href="https://unxw.github.io/ds.44670.org/games"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">DS Emulator</p></a>
+  
+<a href="https://unxw.github.io/there-is-no-game"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">There is not a game here. dont click it will give you 99999 million viruses</p></a>
+  
+<a href="https://unxw.github.io/tanuki-sunset"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Tanuki Sunset</p></a>
+  
+<a href="https://unxw.github.io/mario"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Mario</p></a>
+  
+<a href="https://unxw.github.io/basketball-stars"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Basketball Stars</p></a>
+  
+<a href="https://unxw.github.io/spelunky"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Spelunky</p></a>
+  
+<a href="https://unxw.github.io/bts"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Bad Time Simulator</p></a>
+  
+<a href="https://unxw.github.io/wts"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">WORST Time Simulator</p></a>
+  
+<a href="https://unxw.github.io/shellshockers"><p style=text-align:center;font-size:50px; font-family: "Lucida Console", "Courier New", monospace">Shell Shockers</p></a>
+
+  <h1>IF U WANT UNBLOCKER SITES, ASK ME</h1>
+  <title>Google</title>
+<head/>
