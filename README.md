@@ -3,7 +3,7 @@
 
 <h1>CREDIT (from what i can remember)</h1>
 
-- This complete W [3kh0](https://github.com/3kh0)
+- This complete W, [3kh0](https://github.com/3kh0)
 - Didnt think it was possible, but you made minecraft run in a browser! :) [lax1dude's project](https://github.com/lax1dude/eaglercraft)
 - W3Schools for teaching me so much, [W3Schools](https://www.w3schools.com/)
 - ill add more credid later once i remember who to add
