@@ -65,8 +65,11 @@ body {
 }
 .big {
   text-align: center;
-  font-size:50px;
+  font-size:70px;
 }
 .font {
-  font-family: "Open Sans";
+  font-family: "Open Sans"; /* makes outline around the boxes */
+}
+.center {
+  text-align: center;
 }
