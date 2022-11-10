@@ -31,7 +31,6 @@
   margin: auto;
   margin-top: 20px;
   line-height: 50px;
-  z-index: 1;
 }
 #cornmini {
   border-radius: 5px 5px 5px 5px;
@@ -73,4 +72,15 @@ body {
 }
 .center {
   text-align: center;
+}
+#404corn {
+  border-radius: 30px 30px 30px 30px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px; 
+  width: fit-content;
+  height: auto; 
+  margin: auto;
+  margin-top: 20px;
+  line-height: 50px;
+  z-index: 1;
 }
