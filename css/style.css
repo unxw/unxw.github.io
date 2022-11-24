@@ -1,5 +1,5 @@
 .rainbow {
-  background: linear-gradient(90deg, #ff0000, #ff8700, #ffd300, #deff0a, #a1ff0a, #0aff99, #0aefff, #147df5, #580aff, #be0aff, #ff0000);
+  background: linear-gradient(90deg, #ff0000, #ff8700, #ffd300, #deff0a, #a1ff0a, #0aff99, #0aefff, #147df5, #580aff, #be0aff, #ff0000); /*rainbow text animation*/
   -webkit-text-fill-color: #F000;
   -webkit-background-clip: text;
   -webkit-animation: animated_background 100s linear infinite;
@@ -13,7 +13,7 @@
     }
 }
 #corn1 {
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px; /*corn, short for corner*/
   background: rgba(0, 0, 0, 0.4);
   padding: 20px; 
   width:650px;
@@ -23,7 +23,7 @@
   margin-top: 20px;
 }
 #cornerfit {
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px; /*same thing as above but it can stretch out in order to fit longer lines of text*/
   background: rgba(0, 0, 0, 0.4);
   padding: 20px; 
   width: fit-content;
@@ -33,7 +33,7 @@
   line-height: 50px;
 }
 #cornmini {
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px; /*same thing as corn1 but mini*/
   background: rgba(0, 0, 0, 0.4);
   padding: 10px; 
   width:20px;
@@ -68,13 +68,13 @@ body {
   font-size:70px;
 }
 .font {
-  font-family: "Open Sans"; /* makes outline around the boxes */
+  font-family: "Open Sans"; /* IT LITERALLY SAYS FONT 😭 */
 }
 .center {
-  text-align: center;
+  text-align: center; /*IT SAYS CENTER TEXT ALIGN😫*/
 }
 #corn404 {
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px; /*i forgot what this was for but i think its for the 404 error 💀*/
   background: rgba(0, 0, 0, 0.4);
   padding: 20px; 
   width: fit-content;
@@ -85,5 +85,5 @@ body {
   z-index: 2;
 }
 ul {
-  list-style-type: none;
+  list-style-type: none; /*gets rid of the dots next to the main sites text*/
 }
