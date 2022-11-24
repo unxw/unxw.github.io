@@ -84,6 +84,6 @@ body {
   line-height: 50px;
   z-index: 2;
 }
-ul.myMenu {
+ul {
   list-style-type: none;
 }
