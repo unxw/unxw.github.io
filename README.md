@@ -12,4 +12,4 @@
 
 One day, I was in class during english, and I got really bored. So, just like any person who is me, I decided to make a website, as I disliked how some websites were blocked. So, I reaseached, and looked everywhere. 
 
-<h3>ill write more later im bored</h3>
+<h3>ill write more later i got bored 💀</h3>
