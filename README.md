@@ -10,4 +10,6 @@
 
 <h1>small summary</h1>
 
-One day, I was in class during english, and I got really bored. So, just like any person who is me, I decided to make a website, as I disliked how some websites were blocked. So, I reaseached, and looked everywhere. ill write more later im bored
+One day, I was in class during english, and I got really bored. So, just like any person who is me, I decided to make a website, as I disliked how some websites were blocked. So, I reaseached, and looked everywhere. 
+
+#ill write more later im bored
