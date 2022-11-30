@@ -1,5 +1,6 @@
 <bold><h2>don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
-![GitHub repo size](https://img.shields.io/github/repo-size/unxw/unxw.github.io) ![GitHub forks](https://img.shields.io/github/forks/unxw/unxw.github.io)
+![GitHub repo size](https://img.shields.io/github/repo-size/unxw/unxw.github.io)
+![GitHub forks](https://img.shields.io/github/forks/unxw/unxw.github.io)
 
 <h1>CREDIT (from what i can remember)</h1>
 
