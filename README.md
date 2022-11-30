@@ -1,7 +1,12 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/unxw/unxw.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/unxw/unxw.github.io)
 ![Website](https://img.shields.io/website?down_color=red&down_message=down%20%3A%28&up_color=lightgreen&up_message=up%21&url=https%3A%2F%2Funxw.github.io)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unxw/unxw.github.io/main)
+![GitHub deployments](https://img.shields.io/github/deployments/unxw/unxw.github.io/github-pages?label=Website%20Update%3F)
+![GitHub](https://img.shields.io/github/license/unxw/unxw.github.io)
+
 <bold><h2>don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
+
 <h1>CREDIT (from what i can remember)</h1>
 
 - This complete W, [3kh0](https://github.com/3kh0)
