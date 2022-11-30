@@ -1,5 +1,5 @@
 <bold><h2>don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
-https://img.shields.io/github/directory-file-count/unxw/unxw.github.io?style=plastic
+![GitHub repo size](https://img.shields.io/github/repo-size/unxw/unxw.github.io)
 
 <h1>CREDIT (from what i can remember)</h1>
 
