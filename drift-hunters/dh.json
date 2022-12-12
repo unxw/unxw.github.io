@@ -1,0 +1,13 @@
+{
+    "TOTAL_MEMORY": 1073741824,
+    "dataUrl": "https://unxw.github.io/drift-hunters/dh.data.unityweb",
+    "asmCodeUrl": "https://unxw.github.io/drfit-hunters/dh.asm.code.unityweb",
+    "asmMemoryUrl": "https://unxw.github.io/drift-hunters/dh.asm.memory.unityweb",
+    "asmFrameworkUrl": "https://unxw.github.io/drift-hunters/dh.asm.framework.unityweb",
+    "backgroundUrl": "",
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "#111111",
+    "totalFile": 6,
+    "size": 134902255,
+    "split_size": 22483710
+}
