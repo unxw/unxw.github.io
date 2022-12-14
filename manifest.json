@@ -1,18 +1,16 @@
 {
-  "background_color": "#ffffff",
-  "description": "This is the downloadable/offline version of this website.",
+  "background_color": "#292929",
+  "description": "This is the offline version of the website.",
   "dir": "ltr",
-  "display": "standalone",
-  "name": "unxw",
-  "orientation": "any",
+  "display": "fullscreen",
+  "name": "UNXW",
+  "orientation": "landscape",
   "scope": "/",
-  "short_name": "unxw",
+  "short_name": "UNXW",
   "start_url": "/",
-  "theme_color": "#ffffff",
+  "theme_color": "#2d2d2d",
   "categories": [
-    "business",
-    "security",
-    "weather"
+    "business"
   ],
   "screenshots": [
     {
@@ -27,5 +25,7 @@
     }
   ],
   "icons": [],
-  "shortcuts": []
+  "shortcuts": [],
+  "lang": "en",
+  "prefer_related_applications": false
 }
