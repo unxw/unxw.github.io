@@ -16,7 +16,7 @@
   border-radius: 30px 30px 30px 30px; /*corn, short for corner*/
   background: rgba(0, 0, 0, 0.4);
   padding: 20px; 
-  width:650px;
+  width: 650px;
   height: 50px;
   line-height: 50px;
   margin: auto;
@@ -55,7 +55,7 @@ p.main {
   font-size:50px;
 }
 body {
-  background: rgba(0, 0, 0, 0.8) /* Black bachground with 20% opacity (or 80) idk */
+  background: rgba(0, 0, 0, 0.925) /* Black bachground with 20% opacity (or 80) idk */
 }
 .solid {  
   border: 1px solid black; /* makes outline around the boxes */
@@ -86,4 +86,11 @@ body {
 }
 ul {
   list-style-type: none; /*gets rid of the dots next to the main sites text*/
+}
+input {
+  border-radius: 13px;
+  width: 600px;
+  height: 30px;
+  font-family: "Open Sans";
+  font-size: 20px;
 }
