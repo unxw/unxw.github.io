@@ -6,8 +6,9 @@
 ![GitHub](https://img.shields.io/github/license/unxw/unxw.github.io)
 ![GitHub top language](https://img.shields.io/github/languages/top/unxw/unxw.github.io)
 
-<h3>⭐ also, you dont have to, but leave a star if you want, it helps a lot! :) ⭐</h3>
-<bold><h2>don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
+<h3>⭐ You don't have to, but leave a star if you want, it helps a lot! :) ⭐</h3>
+<bold><h2 style="font-color: red;">also please don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
+## for example
 
 <h1>CREDIT (from what i can remember)</h1>
 
