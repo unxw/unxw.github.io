@@ -1,299 +1,95 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Google</title>
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #dialogText {
-            color: white;
-            background-color: #333333;
-        }
-        
-        #dialogWrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: table;
-            background-color: #EEEEEE;
-        }
-        
-        #dialogWrapCell {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        #mainDialog {
-            max-width: 400px;
-            margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            text-align: left;
-        }
-        #mainDialog > * {
-            padding: 10px 30px;
-        }
-        #passArea {
-            padding: 20px 30px;
-            background-color: white;
-        }
-        #passArea > * {
-            margin: 5px auto;
-        }
-        #pass {
-            width: 100%;
-            height: 40px;
-            font-size: 30px;
-        }
-        
-        #messageWrapper {
-            float: left;
-            vertical-align: middle;
-            line-height: 30px;
-        }
-        
-        .notifyText {
-            display: none;
-        }
-        
-        #invalidPass {
-            color: red;
-        }
-        
-        #success {
-            color: green;
-        }
-        
-        #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
-            float: right;
-            cursor: pointer;
-        }
-        #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #attribution {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-        #attribution, #attribution a {
-            color: #999;
-        }
-        .error {
-            display: none;
-            color: red;
-        }
-    </style>
-  </head>
-  <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <div id="dialogText">DM @vanilahz or vanilah#9625 for pass</div>
-                <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" autofocus>
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Sorry, please try again.</span>
-                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Success!</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Submit</button>
-                        <div style="clear: both;"></div>
-                    </div>
-                </div>
-                <div id="securecontext" class="error">
-                    <p>
-                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
-                    </p>
-                </div>
-                <div id="nocrypto" class="error">
-                    <p>
-                        Your web browser appears to be outdated. Please visit this page using a modern browser.
-                    </p>
-                </div>
-            </div>
+﻿    <!-- Code starts here! -->
+    <!-- so that i don't pop up on google and other search results, resulting in a lower chance of my site getting blocked on most types of content blockers -->
+    <META NAME=&quot;ROBOTS&quot; CONTENT=&quot;NOINDEX, NOFOLLOW&quot;>
+        <link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot;>
+        <link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;img/favicon.ico&quot;>
+        <link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Open%20Sans&quot;>
+        <div class=&quot;myDiv&quot;>
+        <img alt=&quot;my bad logo&quot; src=&quot;img/unxw2.png&quot; />
+        <h1 id=&quot;whitet&quot;>&quot;I Won.&quot; -Walter White</h1>
+        <h2><a href=&quot;https://forms.gle/TsxgN592TXFBK2ai6&quot; style=&quot;color:green;&quot; class=&quot;font&quot;>ASK FOR NEW GAMES HERE</a></h2>
         </div>
-    </div>
-    <div id="attribution">
-        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
-    </div>
-    <script>
-    (function() {
-
-        var pl = "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";
+        <!-- hitwebcounter Code START -->
         
-        var submitPass = document.getElementById('submitPass');
-        var passEl = document.getElementById('pass');
-        var invalidPassEl = document.getElementById('invalidPass');
-        var trycatcherror = document.getElementById('trycatcherror');
-        var successEl = document.getElementById('success');
-        var contentFrame = document.getElementById('contentFrame');
+        <p><a href=&quot;https://www.hitwebcounter.com&quot; target=&quot;_blank&quot;><img alt=&quot;web counter&quot; border=&quot;0&quot; src=&quot;https://hitwebcounter.com/counter/counter.php?page=7968007&amp;amp;style=0036&amp;amp;nbdigits=9&amp;amp;type=ip&amp;amp;initCount=0&quot; title=&quot;Free Counter&quot; /></a><span id=&quot;whitet&quot; class=&quot;font&quot;> TYSM FOR 670+ views, i added a list of things ill add!</span><a href=&quot;https://vanilah.github.io&quot; style=&quot;color:red;&quot; class=&quot;font&quot;><span class=&quot;solid&quot; id=&quot;cornmini&quot;>Backup Site</span></a><a href=&quot;https://docs.google.com/document/d/1m2BSjDxI0Tp0YJ14hN7OTnFHUXBhVf7VuF1TuJLrr6M/edit?usp=sharing&quot; style=&quot;color:green;&quot; class=&quot;font&quot;><span class=&quot;solid&quot; id=&quot;cornmini&quot;>Suggested Games List</span></a></p>
+       
+            <!-- Centered search bar, it is styled using CSS. -->
+        <div class=&quot;center&quot; style=&quot;margin-top: 35px;&quot; >
+        <input style=&quot;text-align: center;&quot; type=&quot;text&quot; id=&quot;mySearch&quot; onkeyup=&quot;myFunction()&quot; placeholder=&quot;Search for game..&quot; title=&quot;Type in a game name&quot;>
+        </div>
+    
+            <!-- ul means unordered list, it has the &quot;myMenu&quot;, which connects it the the javascript code in the <script> tag lower down. All the other stuff inbetween ul is just the games and stuff, they are also styled using CSS classes. -->
+        <ul id=&quot;myMenu&quot;>
+          <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/ubb/menu.html&quot; class=&quot;rainbow&quot;>Unblocked Browser</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/jpg/warn.html&quot; class=&quot;rainbow&quot;>Join Private Game</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/skribbl/&quot; class=&quot;rainbow&quot;>skribbl.io✏ (multiplayer)</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/gartic/&quot; class=&quot;rainbow&quot;>Gartic Phone (multiplayer)</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;cornerfit&quot;><a href=&quot;g/raceo&quot; class=&quot;rainbow&quot;>budget racing game (multiplayer)</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;cornerfit&quot;><a href=&quot;g/tetrism/warning.html&quot; class=&quot;rainbow&quot;>Tetris (multiplayer &amp; singleplayer)</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/flash&quot; class=&quot;rainbow&quot;>Flash Games</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/web/warning.html&quot; class=&quot;rainbow&quot;>Minecraft Web</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/temple-run-2/&quot; class=&quot;rainbow&quot;>Temple Run 2</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/slope-main&quot; class=&quot;rainbow&quot;>Slope</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/2048&quot; class=&quot;rainbow&quot;>2048</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/cookie-clicker&quot; class=&quot;rainbow&quot;>Cookie Clicker</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/drift-hunters&quot; class=&quot;rainbow&quot;>Drift Hunters</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/snowbattle&quot; class=&quot;rainbow&quot;>Snowbattle</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/hextris&quot; class=&quot;rainbow&quot;>Hextris</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/death-run-3d&quot; class=&quot;rainbow&quot;>Deathrun</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/townscaper&quot; class=&quot;rainbow&quot;>Towscaper</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/chrome-dino&quot; class=&quot;rainbow&quot;>Chrome DINO</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/tunnel-rush&quot; class=&quot;rainbow&quot;>Tunnel Rush</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/papaspizza/warning.html&quot; class=&quot;rainbow&quot;>Papa&amp;#39;s Pizzaeria (FLASH)</a></p>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/madalinstuntcars2-main&quot; class=&quot;rainbow&quot;>Maidem Stunt Cars</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/run3&quot; class=&quot;rainbow&quot;>Run 3</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/stc&quot; class=&quot;rainbow&quot;>Sort The Court</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/M64js-main&quot; class=&quot;rainbow&quot;>Super Mario 64 Web</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/game/Athletics.html&quot; class=&quot;rainbow&quot;>QWOP</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/subway-surfers-unity-main&quot; class=&quot;rainbow&quot;>Subway Surfers Web</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/ds.44670.org/games&quot; class=&quot;rainbow&quot;>DS Emulator</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/there-is-no-game&quot; class=&quot;rainbow&quot;>There is no Game.</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/tanuki-sunset&quot; class=&quot;rainbow&quot;>Tanuki Sunset</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/mario&quot; class=&quot;rainbow&quot;>Mario Bros. Web</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/basketball-stars&quot; class=&quot;rainbow&quot;>Basketball Stars</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/spelunky&quot; class=&quot;rainbow&quot;>Spelunky 1 Web</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/bts&quot; class=&quot;rainbow&quot;>Bad Time Simulator</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/wts&quot; class=&quot;rainbow&quot;>WORST Time Simulator</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/shellshockers&quot; class=&quot;rainbow&quot;>Shell Shockers</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/krunkerio&quot; class=&quot;rainbow&quot;>Krunker.io☠</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/slowroads&quot; class=&quot;rainbow&quot;>S L O W R O A D S</a></p></li>
+        <li><p class=&quot;main solid font&quot; id=&quot;corn1&quot;><a href=&quot;g/olg&quot; class=&quot;rainbow&quot;>Online Games (eg. 1v1.lol)</a></p></li>
+        </ul>
+        <p id=&quot;whitet&quot; class=&quot;main font&quot;>More Games Coming Soon!!! 👍</p>
+        <h1 id=&quot;whitet&quot; class=&quot;font&quot;>you should prob do ur work btw :)</h1>
+        <!-- yes i know this rickroll sucks -->
+        <img alt=&quot;gettrolled&quot; src=&quot;img/R.gif&quot; />
+        <title>Google</title>
+        <script>alert("| Update 8.8x || tysm for 900+ views!?!! :D || hello, i have come back after a few months, i got banned of replit so thats why unblocked browser doesnt work, and i have been doing my school work, so thats why here hasnt been updates for a while |")</script>
+        <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, ul, li, a, i;
+          input = document.getElementById(&quot;mySearch&quot;);
+          filter = input.value.toUpperCase();
+          ul = document.getElementById(&quot;myMenu&quot;);
+          li = ul.getElementsByTagName(&quot;li&quot;);
         
-        // Sanity checks
-
-        if (pl === "") {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
-            return;
-        }
-
-        if (!isSecureContext) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#securecontext").style.display = "block";
-            return;
-        }
-
-        if (!crypto.subtle) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#nocrypto").style.display = "block";
-            return;
-        }
-        
-        function str2ab(str) {
-            var ustr = atob(str);
-            var buf = new ArrayBuffer(ustr.length);
-            var bufView = new Uint8Array(buf);
-            for (var i=0, strLen=ustr.length; i < strLen; i++) {
-                bufView[i] = ustr.charCodeAt(i);
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName(&quot;p&quot;)[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = &quot;&quot;;
+            } else {
+              li[i].style.display = &quot;none&quot;;
             }
-            return bufView;
+          }
         }
-
-        async function deriveKey(salt, password) {
-            const encoder = new TextEncoder()
-            const baseKey = await crypto.subtle.importKey(
-                'raw',
-                encoder.encode(password),
-                'PBKDF2',
-                false,
-                ['deriveKey'],
-            )
-            return await crypto.subtle.deriveKey(
-                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
-                baseKey,
-                { name: 'AES-GCM', length: 256 },
-                true,
-                ['decrypt'],
-            )
-        }
-        
-        async function doSubmit(evt) {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-
-            let iv, ciphertext, key;
-            
-            try {
-                var unencodedPl = str2ab(pl);
-
-                const salt = unencodedPl.slice(0, 32)
-                iv = unencodedPl.slice(32, 32 + 16)
-                ciphertext = unencodedPl.slice(32 + 16)
-
-                key = await deriveKey(salt, passEl.value);
-            } catch (e) {
-                trycatcherror.style.display = "inline";
-                console.error(e);
-                return;
-            }
-
-            try {
-                const decryptedArray = new Uint8Array(
-                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
-                );
-
-                let decrypted = new TextDecoder().decode(decryptedArray);
-
-                if (decrypted === "") throw "No data returned";
-
-                const basestr = '<base href="." target="_top">';
-                const anchorfixstr = `
-                    <script>
-                        Array.from(document.links).forEach((anchor) => {
-                            const href = anchor.getAttribute("href");
-                            if (href.startsWith("#")) {
-                                anchor.addEventListener("click", function(e) {
-                                    e.preventDefault();
-                                    const targetId = this.getAttribute("href").substring(1);
-                                    const targetEl = document.getElementById(targetId);
-                                    targetEl.scrollIntoView();
-                                });
-                            }
-                        });
-                    <\/script>
-                `;
-                
-                // Set default iframe link targets to _top so all links break out of the iframe
-                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
-                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
-                else decrypted = basestr + decrypted;
-
-                // Fix fragment links
-                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
-                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
-                else decrypted = decrypted + anchorfixstr;
-                
-                contentFrame.srcdoc = decrypted;
-                
-                successEl.style.display = "inline";
-                setTimeout(function() {
-                    dialogWrap.style.display = "none";
-                }, 1000);
-            } catch (e) {
-                invalidPassEl.style.display = "inline";
-                passEl.value = "";
-                submitPass.disabled = false;
-                passEl.disabled = false;
-                console.error(e);
-                return;
-            }
-        }
-        
-        submitPass.onclick = doSubmit;
-        passEl.onkeypress = function(e){
-            if (!e) e = window.event;
-            var keyCode = e.keyCode || e.which;
-            invalidPassEl.style.display = "none";
-            if (keyCode == '13'){
-              // Enter pressed
-              doSubmit();
-              return false;
-            }
-        }
-    })();
-    </script>
-  </body>
-</html>
+        </script>
+        <script>
+        console.log('%cwhy are you going through my code... at least credit me if anything :o   -unxw', 'font-size:30px; color: green')
+        </script>
+        <p>&amp;nbsp;</p>
+        <!-- Here's where the code ends, the stuff after is from the page encryptor I use. -->
+        <!-- I'm just going to write random stuff here now :) -->
+        <!-- Written Feb 8, 2023 -->
+        <!-- updated March 28, 2023-->
