@@ -2,7 +2,6 @@
 ^^it is most likely blocked if you are on a school network, this is for whoever just wants to see the site
 ----
 <p align="center">
-<img src="https://img.shields.io/github/repo-size/unxw/unxw.github.io" />
 <img src="https://img.shields.io/github/forks/unxw/unxw.github.io" />
 <img src="https://img.shields.io/website?down_color=red&down_message=down%20%3A%28&up_color=lightgreen&up_message=up%21&url=https%3A%2F%2Funxw.github.io" />
 <img src="https://img.shields.io/github/last-commit/unxw/unxw.github.io/main" />
