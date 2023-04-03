@@ -17,7 +17,7 @@
 <h1>CREDIT (from what i can remember)</h1>
 
 - This complete W, [3kh0](https://github.com/3kh0) for inspiring me!
-- Didnt think it was possible, but you made minecraft run in a browser! :) [lax1dude's project](https://github.com/lax1dude/eaglercraft)
+- long live lax1dude..
 - W3Schools for teaching me so much, [W3Schools](https://www.w3schools.com/)
 - ill add more credit later once i remember who to add
 
