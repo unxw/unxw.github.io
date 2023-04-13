@@ -16,8 +16,9 @@
   border-radius: 30px 30px 30px 30px; /*corn, short for corner*/
   background: rgba(0, 0, 0, 0.4);
   padding: 20px; 
-  width: 650px;
-  height: 50px;
+  width: 200px;
+  height: auto;
+  min-height: 50px;
   line-height: 50px;
   margin: auto;
   margin-top: 20px;
@@ -29,8 +30,18 @@
   width: fit-content;
   height: auto; 
   margin: auto;
-  margin-top: 20px;
-  line-height: 50px;
+  line-height: auto;
+}
+  #cornstretch {
+    border-radius: 30px 30px 30px 30px; /*corn, short for corner*/
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px; 
+    width: 200px;
+    height: auto;
+    min-height: 25px;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 20px;
 }
 #cornmini {
   border-radius: 5px 5px 5px 5px; /*same thing as corn1 but mini*/
@@ -41,7 +52,7 @@
 }
     .myDiv {
   border: 3px outset black; /* the big box at the top of the screen */
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;  
   width: auto;
@@ -52,7 +63,7 @@
 }
 p.main {
   text-align: center;
-  font-size:50px;
+  font-size: 20px;
 }
 body {
   background: rgba(0, 0, 0, 0.925) /* Black bachground with 20% opacity (or 80) idk */
@@ -93,4 +104,40 @@ input {
   height: 30px;
   font-family: "Open Sans";
   font-size: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #494949;
+  overflow: hidden;
+  border: black;
+  border-radius: 12px 12px 0px 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #777777;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #c80707;
+  color: white;
 }

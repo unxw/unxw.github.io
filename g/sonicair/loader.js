@@ -18,7 +18,7 @@
         throw 'using preloaded data can only be done on a web page or in a web worker';
       }
       var PACKAGE_NAME = 'source/_emscripten/dist/sonic3air.data';
-      var REMOTE_PACKAGE_BASE = 'https://files.catbox.moe/28acwm.data';
+      var REMOTE_PACKAGE_BASE = 'https://drive.google.com/u/0/uc?id=1LQbF0VIMzhumjJCCMfhIdrFNOfqIDSj3&export=download&confirm=t&uuid=97f76852-cc3f-458a-8c39-746211e5c967&at=ANzk5s7ewFLDMoc0ijapa8OzmqQw:1681393120519';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
         err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');

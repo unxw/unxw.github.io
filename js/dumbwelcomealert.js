@@ -1,1 +1,1 @@
-alert("| Update 9.3x || i haaate french || fixed like all the flash games  |")
+alert("| Update i forgot lol || i got bored and updated that site a lil || I changed the site design a bit, will add pictures soon |")
