@@ -1,1 +1,1 @@
-alert("| Update 9.4.x ||no updates for a long time because i have a stupid english isu to do. btw if yk this site, then we are likey from the same school, so do ur work 💀💀💀|")
+alert("| Update i forgot ||i got literally all of my stuff taken and i just got them back after like a month :D ill update site soon, still got some ISUs to do 😭|")
