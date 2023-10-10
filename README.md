@@ -1,5 +1,8 @@
-## NON PASSWORD PROTECTED SITE [HERE](https://github.com/unxa/unxa.github.io)
-^^it is most likely blocked if you are on a school network, this is for whoever just wants to see the site
+# ALMOST DONE THE UPDATE!@!!
+
+
+
+
 ----
 <p align="center">
 <img src="https://img.shields.io/github/forks/unxw/unxw.github.io" />
@@ -13,13 +16,6 @@
                                                                           
 <h3 align="center">⭐ You don't have to, but leave a star if you want, it helps a lot! :) ⭐</h3>
 <bold><h2 align="center">❗also please don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
-
-<h1>CREDIT (from what i can remember)</h1>
-
-- This complete W, [3kh0](https://github.com/3kh0) for inspiring me!
-- long live lax1dude..
-- W3Schools for teaching me so much, [W3Schools](https://www.w3schools.com/)
-- ill add more credit later once i remember who to add
 
 <h1>small summary</h1>
 
