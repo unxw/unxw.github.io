@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(8, 8, 8);
+}
+text {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
