@@ -1,1 +1,1 @@
-alert("| Update i forgot ||i got literally all of my stuff taken and i just got them back after like a month :D ill update site soon, still got some ISUs to do 😭|")
+alert("sorry bout the alert that has been here for like 7 months lol |  im almost done the stupid update! stay tuned")
