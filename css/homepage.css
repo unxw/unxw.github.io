@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+.blur-image {
+  filter: blur(8px);
+  background-image: url("/img/backgroundimagehome.jpg");
+  background-repeat: no-repeat;
+  background-clip: inherit;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  margin: 0;
+  z-index: 0;
+  }
+.homemenubuttons {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 350px;
+  z-index: 6;
+  text-align: center;
+  position: absolute;
+  margin-top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  border: 0px;
+  transition: 0.2s;
+}
+.homemenubuttons:hover {
+  background-color: rgba(48, 48, 48, 0.5);
+  padding: 35px;
+  font-size: 50px;
+  width: 430px;
+}
+.topbar {
+  padding: 10px;
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#middletext {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans';
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+  width: 250px;
+}
+a#middletext {
+  width: 250px;
+  position: fixed;
+  height: 80px;
+  top: 0%;
+  left: calc(50% - 125px);
+}
+.topnav {
+  position: fixed;
+  width: 120px;
+  color: white;
+  font-size: 20px;
+  border: 2px;
+  background-color: rgba(48, 48, 48, 0.8);
+  height: 80px;
+  font-family: 'Open Sans';
+  top: 0%;
+  right: 0%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.topnav:hover {
+  background-color: rgba(255, 255, 255, 0.219);
+}
+.topnav:visited {
+  text-decoration: none ;
+}
+.text {
+  font-family: 'Open Sans';
+  font-size: 30px;
+  color: black;
+  top: 18px;
+  left: 5%;
+  width: 200px;
+  z-index: 3;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.changelog {
+  border-radius: 15px;
+  width: 48%;
+  height: 75%;
+  right: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 50px;
+  overflow: hidden;
+}
+.changelogtext {
+  font-family: 'Open Sans';
+  font-size: 40px;
+  color: white;
+  display: inline-block;
+}
+#changelogembedd {
+  width: 90%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  margin-top: -70px;
+  border: 0;
+}

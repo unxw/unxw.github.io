@@ -141,3 +141,15 @@ input {
   background-color: #c80707;
   color: white;
 }
+#hidebox {
+  background-image: url("/img/docs.png");
+  z-index: 23;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+}
+.hidden {
+  display: none;
+}
