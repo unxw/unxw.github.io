@@ -1,0 +1,8 @@
+body {
+    background: rgb(8, 8, 8);
+}
+.center {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
