@@ -17,13 +17,6 @@
 <h3 align="center">⭐ You don't have to, but leave a star if you want, it helps a lot! :) ⭐</h3>
 <bold><h2 align="center">❗also please don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
 
-<h1>CREDIT (from what i can remember)</h1>
-
-- This complete W, [3kh0](https://github.com/3kh0) for inspiring me!
-- long live lax1dude..
-- W3Schools for teaching me so much, [W3Schools](https://www.w3schools.com/)
-- ill add more credit later once i remember who to add
-
 <h1>small summary</h1>
 
 One day, I was in class during english, and I got really bored. So, just like any person who is me, I decided to make a website, as I disliked how some websites were blocked. So, I reaseached, and looked everywhere. 
