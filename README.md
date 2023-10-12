@@ -1,8 +1,4 @@
 # my representation of my boredom at its finest
-
-
-
-
 ----
 <p align="center">
 <img src="https://img.shields.io/github/forks/unxw/unxw.github.io" />
