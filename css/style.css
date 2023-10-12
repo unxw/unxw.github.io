@@ -66,7 +66,7 @@ p.main {
   font-size: 20px;
 }
 body {
-  background: rgba(0, 0, 0, 0.925) /* Black bachground with 20% opacity (or 80) idk */
+  background: rgb(8,8,8) /* Black bachground with 20% opacity (or 80) idk */
 }
 .solid {  
   border: 1px solid black; /* makes outline around the boxes */

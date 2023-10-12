@@ -127,3 +127,6 @@ a#middletext {
   margin-top: -70px;
   border: 0;
 }
+.hidden {
+  display: none;
+  }
