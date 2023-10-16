@@ -12,9 +12,3 @@
                                                                           
 <h3 align="center">⭐ You don't have to, but leave a star if you want, it helps a lot! :) ⭐</h3>
 <bold><h2 align="center">❗also please don't directly rip my stuff without crediting me or the og creator, thanks!</h2></bold>
-
-<h1>small summary</h1>
-
-One day, I was in class during english, and I got really bored. So, just like any person who is me, I decided to make a website, as I disliked how some websites were blocked. So, I reaseached, and looked everywhere. 
-
-<h3>ill write more later i got bored 💀</h3>
