@@ -1,6 +1,5 @@
 # my representation of my boredom at its finest
 <h1 align="center"><a href="https://unxw.github.io/">the site if u didn't see it in the top right corner</a><h1>
-----
 <p align="center">
 <img src="https://img.shields.io/github/forks/unxw/unxw.github.io" />
 <img src="https://img.shields.io/website?down_color=red&down_message=down%20%3A%28&up_color=lightgreen&up_message=up%21&url=https%3A%2F%2Funxw.github.io" />
