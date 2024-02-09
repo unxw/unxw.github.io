@@ -20,7 +20,7 @@ a   {
 .topnav {
   background-color: #3a3a3a;
   position: relative;
-  width: 93%;
+  width: 93vw;
   height: 70px;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ a   {
 }
 input {
   border-radius: 13px;
-  width: 400px;
+  width: 30vw;
   height: 30px;
   font-family: "Open Sans";
   font-size: 20px;
@@ -130,4 +130,29 @@ input {
   flex-wrap: wrap;
   position: relative;
   left: calc(100% - 210px);
+}
+#alert {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  left: calc(-50% + (93vw/2));
+  position:relative;
+  border: 100% 100% 100% 100%;
+  border-radius: 2px;
+  border-style: solid;
+  margin-bottom: 10px;
+  width: 90vw;
+  border-color: rgb(184, 184, 184);
+  background: white;
+  animation-name: alert;
+  animation-duration: 5s;
+}
+@keyframes alert {
+  0% {
+    opacity: 0;
+    transform: translateY(-100);;
+  }
+  100% {
+    opacity: 1;
+  }
 }

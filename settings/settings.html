@@ -1,0 +1,50 @@
+<form id="titleFaviconForm">
+    <label for="preset">Preset:</label>
+    <select id="preset">
+      <option value="">Custom</option>
+      <option value="preset1">Preset 1</option>
+      <option value="preset2">Preset 2</option>
+    </select>
+    <label for="title">Title:</label>
+    <input type="text" id="title">
+    <label for="favicon">Favicon URL:</label>
+    <input type="text" id="favicon">
+    <button type="submit">Submit</button>
+  </form>
+  
+  <script>
+    document.getElementById('titleFaviconForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      var preset = document.getElementById('preset').value;
+      var title = document.getElementById('title').value;
+      var favicon = document.getElementById('favicon').value;
+  
+      if (preset === 'preset1') {
+        document.title = 'Preset 1 Title';
+        document.querySelector('link[rel="icon"]').href = 'preset1-favicon.ico';
+      } else if (preset === 'preset2') {
+        document.title = 'Preset 2 Title';
+        document.querySelector('link[rel="icon"]').href = 'preset2-favicon.ico';
+      } else {
+        document.title = title;
+        document.querySelector('link[rel="icon"]').href = favicon;
+      }
+  
+      localStorage.setItem('title', document.title);
+      localStorage.setItem('favicon', document.querySelector('link[rel="icon"]').href);
+    });
+  
+    window.addEventListener('load', function() {
+      var title = localStorage.getItem('title');
+      var favicon = localStorage.getItem('favicon');
+  
+      if (title) {
+        document.title = title;
+      }
+  
+      if (favicon) {
+        document.querySelector('link[rel="icon"]').href = favicon;
+      }
+    });
+  </script>
