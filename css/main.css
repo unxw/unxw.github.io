@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(15, 7, 14);
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    color: white;
+    width: auto;
+    font-size: 50px;
+    margin: 0;
+    height: 80px;
+    position: relative;
+}
+.background {
+    width: 100vmax;
+    height: 100vmax;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    position: fixed;
+    bottom: 50vh;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+.contentbox {
+z-index: 999;
+background-color: rgb(26, 17, 23);
+border: solid rgb(44, 31, 40);
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 30vmax;
+height: 70vh;
+border-radius: 40px;
+margin: 0;
+}
+.more {
+    z-index: 999;
+    background-color: rgb(26, 17, 23);
+    border: solid rgb(44, 31, 40);
+    position: fixed;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vmax;
+    height: 10vh;
+    border-radius: 40px;
+    margin-top: calc(10vh / 2);
+    font-family: "Overpass Mono";
+    vertical-align: middle;
+    }
+.content {
+    color: white;
+    text-align: center;
+    font-family: "Overpass Mono";
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.welcome {
+    animation: 5s ease-in-out welcome forwards;
+    font-family: "Overpass Mono";
+    width: 100%;
+    height: 100vh;
+    z-index: 23432324324234234324324;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes welcome {
+    0% {
+        background-color: black;
+        opacity: 100%;
+    }
+    50% {
+        background-color: rgb(255, 255, 255);
+    }
+    80% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        background-color: white;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+#sillycat {
+    animation: 5s ease-in-out appear forwards;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
