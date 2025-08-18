@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>nixora's bio!</title>
+    <script src="./js/css-doodle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Afacad">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700">
+</head>
+<body>
+  <div class="therot"></div>
+    <div class="welcome">
+       <h2 style="color: rgb(0, 0, 0);">welcome to my site!! :D <span><img src="/img/welcome.gif" id="sillycat"/></span></h2>
+    </div>
+    <div class="topbar">
+
+    </div>
+    <div class="contentbox">
+        <div class="content">
+            <h1 style="margin: -2vh; font-size: 70px; padding: 0;">Nixora!</h1>
+            <p style="margin-top: 0;">he/him</p>
+            <img src="https://github.com/unxw.png" alt="my pfp!!" id="pfp"/>
+            <p style="font-size: 2.5vh;"><a href="https://instagram.com/camwym">insta 📸</a> | <a href="https://github.com/unxw">github 🤖</a> | @nixora on discord (ew)</p>
+            <a href="#more">
+              <div class="scrolldown">
+                <img width="50vw" height="50vh" src="/img/arrow.png"/>
+              </div>
+            </a>    
+        </div>
+    </div>
+    <div class="more" id="more">
+      <h1 style="color: white;">My projects! (for now)</h1>
+      <div class="moreflex">
+        <div class="project">
+          <a style="text-decoration: none; text-decoration-line: none;" href="https://study.nixora.space">
+          <h2>THE website.</h2>
+          <img src="./img/squishcat.gif" alt="my pfp!!" id="stupidembedpicdoesntwork"/>
+        </div>
+      </a>
+    </div>
+    <a href="#portfolio">
+    <div class="scrolldown">
+          <img width="50vw" height="50vh" src="/img/arrow.png"/>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio">
+      <h1 id="portfolio">My portfolio!<img src="./img/jumpcat.gif" width="50vh" height="50vh" style="margin-left: 15px;"/></h1>
+      <h2 style="font-family: Overpass Mono; font-size: 4vh; margin-top: 7vh;">ill do the rest later got lazy lmao (its been almost 2 years now LMAO)</h2>
+      <h2 style="font-family: Overpass Mono; font-size: 4vh; margin-top: 7vh;">For any further info, contact me! (at top of page)</h2>
+      <footer>made with love 💖 by nixora, 2025!! <a href="#sillycat">back to top</a></footer>
+    </div>
+    <div class="background">
+        <css-doodle grid="20x20">
+          :doodle {
+            @size: 150% 150%;
+            gap: 5px;
+            pointer-events: none;
+            z-index: 0;
+          }
+          clip-path: @shape(
+          points: 360;
+          r: .8 + cos(5t)*.18;
+          );
+          background: hsl(@rand(200, 230), 80%, @rand(60%, 100%));
+          transform: scale(@rand(20%, 100%)) rotate(@rand(0deg, 360deg));
+          animation: fall @rand(15s, 30s) infinite linear;
+          animation-delay: -15s;
+          @keyframes fall {
+            0% { transform: translateX(100vw) rotate(0deg); opacity: 0; }
+            50% { opacity: 1}
+            100% { transform: translateX(-110vw) translateY(100vh) rotate(@rand(-360deg, 360deg)); opacity: 0; }
+          }
+          </css-doodle>
+    </div>
+</body>
