@@ -1,12 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site blehhh</title>
+    <script src="/js/particles.js"></script>
+    <script src="/js/img.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" id="favicon" type="image/x-icon" href="/img/googleicon.webp"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+    <title>Google</title>
 </head>
 <body>
-<p>placeholder till i actually implement the content and add stuff and all that</p>
-<img src="./img/download.jpg"/>
+    <div class="background" id="deepwokenbg"></div>
+    <div id="particles-js"></div>
+    <a href="https://github.com/unxw/unxw.github.io"><img src="/img/github.svg" alt="GitHub" id="icon" width="50vw" height="50vh" style="padding: 5px;"/></a> <!-- ughhh i hate adding styles that are in the html but adding this to the css would be just as useless-->
+    <div class="container" id="title" >
+        <img class="titleimg" src="/img/logo.webp" alt="title" />
+        <input type="password" id="pass" placeholder="password pls" onkeypress="if(event.key == 'Enter'){pass();}"/> <!-- event listener for keypress of enter -->
+    </div>
+    <p class="version">V1.0</p>
 </body>
 </html>
