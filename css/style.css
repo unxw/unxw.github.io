@@ -3,25 +3,74 @@ body{
     height: 100%;
     margin: 0;
 }
+
+a{
+    text-decoration: none; /* no one likes that stupid ah blue line under links </3 */
+}
+
 /* things that are mainly on the screen stuff idfk im rushing ts before the wifi shuts off </3 */
 .titleimg{
     height: auto;
-    width: auto;
+    width: 90%;
+    
 }
 
 .container{  
     animation: 1s ease-in fadeIn;
     position: absolute;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: stretch;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    transform: translate(-50%, -30%);
+    width: 70%;
     height: 90vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+.container-content{
+    margin: 5px;
+    height: 18vh; /*reminder: i put the height and width the same because it has to be a square dumbass */
+    width: 18vh;
+    display: flex;
+    padding: 0;
+    border: 0;
+    flex-wrap: wrap; /* if this weren't here then the padding of the text would push the image back a little, and it would be off a few pixels which pmo */
+    justify-content: center; /* centers the text over the image */
+    border-radius: 20px;
+    background-color: black;
+}
+.content-img{    /* make da image fit in da box rahhh */
+    height:100%; 
+    width: 100%;
+    border-radius: inherit; /* inherits the border rad from its parent (container-content), mid parenting imo */
+}
+
+.content-text{
+    color: white;    
+    font-size: clamp(2vh, 3vh, 5vh); /* clamp just lets u do a min size, prefered, and max. */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* genuinely disgusting math to center the text of in the middle of the image LOL */
+    position: absolute;
+    visibility: hidden;
+    font-family: 'Jua', sans-serif;
+    width: inherit;
+}
+.container-content:hover {
+    transform: scale(1.04); /* make slight bigger rahhhh*/
+    transition: all 0.1s ease-out;
+}
+.container-content:hover .content-text {
+    visibility: visible;
+    animation: fadeIn 0.3s ease-out forwards;
+    transition: 1s;
+}
+
+.container-content:hover .content-img {
+    animation: fadeOut 0.2s ease-out forwards;
+    animation-iteration-count: 0.6;
 }
 
 #title{
@@ -31,19 +80,22 @@ body{
     transform: translate(-50%, -50%);
     width: 50%;
     height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
 }
 
 #pass{
     width: 50%;
-    filter: opacity(20%);
     height: 3vh;
-    left: 25%; /* bro why does making it go left make it go right... at least its centered now */
-    position: relative;
+    margin: 0 auto;
     font-size: 4vh;
     text-align: center;
     background-color: black;
     color: white;
     font-family: 'Jua', serif;
+    filter: opacity(20%);
 }
 
 #icon {
@@ -56,6 +108,7 @@ body{
     filter: invert(30%);
 }
 .version{
+    animation: 1.5s ease-in fadeIn;
     font-size: 3vh;
     color: white;
     font-family: 'Jua', serif;
