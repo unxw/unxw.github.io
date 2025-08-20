@@ -1,0 +1,9 @@
+lousy ah couldnt even make a .md file or smth 💔
+
+"name": "Random",          name of entry
+"img": "/img/done.webp",   image path of entry
+"link": "#",               link for index of entry
+"lastPlayed": 0,           last played entry, still have no idea how im gonna do this
+"popular": false,          
+"priority": true,          popular and priority dictate the order of each entry
+"mode": 0                  mode dictates to handler() what mode to run in... 0 = normal mode (will just load u into game and change json entries), 1 = table mode (will open some sort of table where you can pick the version of the game, and the entries in there will be mode zero.)

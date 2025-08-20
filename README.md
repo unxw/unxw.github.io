@@ -1,5 +1,13 @@
 # nixora.space!!! 💫 (trash site tho)
-
+## beta 1.2 "let there be unfished code"
+whoops
+- ok so ive started adding a system for how the content can be added instead of making 200 lines of the same boxes
+- ts took forever but i added a system to add content boxes using js that reads off a json file
+- thank actual god for ai (NOT TO WRITE THE CODE THATS FOR LOSERS) to solve problems that not even stackoverflow has on it
+- working on table system
+- added search and top bar
+- i needa finsih the json
+- made the version shorter bcz i felt like it heh
 ## beta 1.1 "let there be a someone done homescreen menu"
 yipeee i like how it turned out
 - added a flex box to the home screen

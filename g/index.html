@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/particles.js"></script>
     <script src="/js/img.js"></script>
+    <script src="/js/contentsort.js"></script>
     <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="icon" id="favicon" type="image/x-icon" href="/img/googleicon.webp"> 
@@ -14,27 +15,19 @@
 <body>
     <div class="background" id="deepwokenbg"></div>
     <div id="particles-js"></div>
-
-    <div class="container">
-
-        <a href="/g/test/">
+    <div class="container" id="utils">
+        <div class="topBar"></div>
+        <input type="text" id="pass" placeholder="placeholdeer search bar" oninput="searchBar()"/>
+    </div>
+    <div class="container" id="contents">
+        <!--
+        <a href="#">
             <button class="container-content">
-                <img class="content-img" src="/img/done.webp"/>
+                <img class="content-img" src="/img/done.webp"/>  this is the template for each box, they are spawned via contentsort.js, and all entries are stored in /js/json/contents.json  !!
                 <span class="content-text">1 Line</span>
             </button>
         </a>
-        <a href="/g/test/">
-            <button class="container-content">
-                <img class="content-img" src="/img/done.webp"/>
-                <span class="content-text">2 Line dddddword</span>
-            </button>
-        </a>
-        <a href="/g/test/">
-            <button class="container-content">
-                <img class="content-img" src="/img/done.webp"/>
-                <span class="content-text">loooooooooooooooong word</span>
-            </button>
-        </a>
+        -->
 
     </div>
 </body>

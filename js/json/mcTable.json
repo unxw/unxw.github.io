@@ -1,0 +1,13 @@
+{
+    "list":[
+        {
+        "name": "Minecraft 1.12.2",
+        "img": "/img/1.12.2.webp",
+        "link": "/g/mc/1.12.2/",
+        "lastPlayed": 0,
+        "popular": false,
+        "priority": true,
+        "mode": 0
+        }
+    ]
+ }

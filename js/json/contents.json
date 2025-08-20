@@ -1,0 +1,40 @@
+{
+    "list":[
+        {
+        "name": "Random",
+        "img": "/img/done.webp",
+        "link": "#",
+        "lastPlayed": 0,
+        "popular": false,
+        "priority": true,
+        "mode": 2
+        },
+        {
+        "name": "Unblocked Browser",
+        "img": "/img/ubb.webp",
+        "link": "#",
+        "lastPlayed": 0,
+        "popular": false,
+        "priority": true,
+        "mode": 0
+        },
+        {
+        "name": "Deltarune",
+        "img": "/img/deltarune.webp",
+        "link": "#",
+        "lastPlayed": 0,
+        "popular": true,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "table test",
+        "img": "/img/deltarune.webp",
+        "link": "#",
+        "lastPlayed": 0,
+        "popular": true,
+        "priority": false,
+        "mode": 1
+        }
+    ]
+}
