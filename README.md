@@ -1,4 +1,4 @@
-# nixora.space!!! 💫 (trash site tho)
+# nixora.space!!! 💫 (no i havent release the actual site yet just the bio)
 ## beta 1.3 "genuinely a decent upd"
 i feel so goated rn
 - addded a random system that works nicely but i need to add support for tables and make it not touch the forms button
