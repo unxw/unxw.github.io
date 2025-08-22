@@ -1,4 +1,19 @@
 # nixora.space!!! 💫 (trash site tho)
+## beta 1.3 "genuinely a decent upd"
+i feel so goated rn
+- addded a random system that works nicely but i need to add support for tables and make it not touch the forms button
+- implemented the table function, this was a genuine pain to do
+- added craft just to test function
+- changed some animation speeds on some elements
+- changed spacing of some elements and how they are measured
+- moved json files into their own respective folders (that are under js)
+- added a few images to test
+- moved the version thing again
+- uhmmmm
+- made deepwoken secret change the text on the password bar
+- added image for random and also added a selection for the gforms thing
+- did a LOT of changes to main.js and contentsort.js
+-idk what else to put now i forgot lol
 ## beta 1.2 "let there be unfished code"
 whoops
 - ok so ive started adding a system for how the content can be added instead of making 200 lines of the same boxes

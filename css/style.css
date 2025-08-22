@@ -16,7 +16,7 @@ a{
 }
 
 .container{  
-    animation: 1s ease-in fadeIn;
+    animation: 0.5s ease-out fadeIn;
     position: absolute;
     display: flex;
     top: 50%;
@@ -91,8 +91,8 @@ a{
 #pass{
     width: 50%;
     height: 3vh;
-    margin: 0 auto;
-    font-size: 4vh;
+    margin: 0 auto 3vh;
+    font-size: 3.5vh;
     text-align: center;
     background-color: black;
     color: white;
@@ -117,18 +117,19 @@ a{
     filter: opacity(40%);
     margin: 0;
     position: fixed;
+    left: 95vw;
+    bottom: 95vh;
 }
 
 .container#utils{
-    top: 7%;
+    top: 8%;
     height: 20vh;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
 }
 
-.topBar{
-    
+.topBar{  
     width: 60%;
     height: 10vh;
     background-color: black;
@@ -136,8 +137,57 @@ a{
     border-radius: 50px;
 }
 
+.container#table{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
+#table-select {
+    width: 65%;
+    height: 6vh;
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+    color: white;
+    font-family: 'Jua', serif;
+    border-radius: 5px;
+    font-size: 2vh;
+    margin: 5%;
+}
 
+#exit{
+    height: 6vh;
+    width: 6vh;
+    margin: 5% 5%;
+    left: 0;
+}
+#exit:hover{
+    filter: brightness(0.5);
+    transform: scale(0.95);
+    transition: 0.1s ease-out;
+}
+ 
+#play{
+    height: 6vh;
+    width: 6vh;           /* i was working on this last */
+    margin: 5% 5%;
 
+}
+
+#table-img{
+    height: 55%;
+    margin: 3%;
+}
 
 /* all anims for each section stay at the bottom of their part */
 @keyframes fadeIn { /* anim for fadeins*/
@@ -155,8 +205,19 @@ a{
     }
     100%{
         opacity: 0;
+        display: none;
     }
 }
+.hidden {
+    display: none;
+}
+.fadeIn {
+    animation: fadeIn 0.1s ease-out forwards; /* forwards keeps the state of the animation when it finishes */
+}
+.fadeOut {
+    animation: fadeOut 0.1s ease-out forwards;
+}
+
 /* BACKGROUND STUFF BELOW*/
 /*baseline for all backgrounds*/
 .background{

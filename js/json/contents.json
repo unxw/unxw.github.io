@@ -2,39 +2,53 @@
     "list":[
         {
         "name": "Random",
-        "img": "/img/done.webp",
+        "img": "/img/random.webp",
         "link": "#",
-        "lastPlayed": 0,
         "popular": false,
         "priority": true,
-        "mode": 2
+        "mode": 1
+        },
+        {
+        "name": "Questions & Suggestions!",
+        "img": "/img/forms.webp",
+        "link": "https://forms.gle/PEu5TaQJG1Avhufh9",
+        "popular": false,
+        "priority": true,
+        "mode": 1
         },
         {
         "name": "Unblocked Browser",
-        "img": "/img/ubb.webp",
+        "img": "/img/done.webp",
         "link": "#",
-        "lastPlayed": 0,
         "popular": false,
         "priority": true,
         "mode": 0
         },
         {
         "name": "Deltarune",
-        "img": "/img/deltarune.webp",
+        "img": "/img/done.webp",
         "link": "#",
-        "lastPlayed": 0,
         "popular": true,
         "priority": false,
         "mode": 0
         },
         {
-        "name": "table test",
-        "img": "/img/deltarune.webp",
+        "name": "Minecraft",
+        "img": "/img/mc.webp",
         "link": "#",
-        "lastPlayed": 0,
         "popular": true,
         "priority": false,
-        "mode": 1
+        "mode": 2,
+        "tablePath": "/js/json/tables/mc.json"
+        },
+        {
+        "name": "another table",
+        "img": "/img/done.webp",
+        "link": "#",
+        "popular": true,
+        "priority": false,
+        "mode": 2,
+        "tablePath": "/js/json/contents.json"
         }
     ]
 }

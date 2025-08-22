@@ -1,4 +1,3 @@
-<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,8 +15,17 @@
     <div class="background" id="deepwokenbg"></div>
     <div id="particles-js"></div>
     <div class="container" id="utils">
-        <div class="topBar"></div>
+        <div class="topBar">
+            <h1 style="color: white; text-align: center;">ill add functionality for this later</h1>
+        </div>
         <input type="text" id="pass" placeholder="placeholdeer search bar" oninput="searchBar()"/>
+    </div>
+    <div class="container hidden" id="table">
+        <img id="exit" src="/img/close.svg" onclick="tableThing(1)"/>
+        <select id="table-select" onchange="tableThing(2)">
+        </select>
+        <img id="table-img" src="#"  >
+        <button id="play">Play!</button>
     </div>
     <div class="container" id="contents">
         <!--

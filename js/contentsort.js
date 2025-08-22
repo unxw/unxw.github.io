@@ -1,11 +1,11 @@
-//this will spawn in all of the containers when i actually make this.
-
+//yipee i made it
+//ts genuinely might be among the least helpful comments ever
 let items = [];
-function printIt(x, path){                       //recives a mode number... 1 = default sort, 2 = recently played, 3 = priority
+function printIt(x, path){                 //recives a mode number... 1 = default sort, 2 = recently played, 3 = priority
     fetch(path)
         .then(response => response.json()) //json is the method that takes a response stream and parses it as a json or smth
         .then(data => {items = data.list;
-            console.log(items);            //reads name of array 1, remove the box bracket thing and .name to print all
+            //console.log(items);            //reads name of array 1, remove the box bracket thing and .name to print all
                 if(x == 1){
                     defaultSort(items);
                 }
@@ -14,14 +14,60 @@ function printIt(x, path){                       //recives a mode number... 1 = 
                 }
         }
     ) 
-}                               
+}
+
+function getTable(path){                                                   //HOLY MOLY I FINALLY GOT THIS TO WORK
+    const table = document.querySelector('#table-select');                 //pulls the html of the ENTIRE taable select
+    const tableSelect = document.getElementById('table-select');           //selects the element of tableseleect
+    const playButton = document.getElementById('play');                    //selects the id of play button
+    console.log(table);
+    table.innerHTML = '';                                                  //clear table
+    fetch(path)                                                            //fetch from path that was inputted when this method was called
+        .then(response => response.json())                                 //take response from fetched path and parse as a json file
+        .then(data => { items = data.list                                  //the parsed file is alwaus called data (i think), make var items equal to data.list (list being the list of things inside the json bcz thats what i called them in the json)
+            console.log(items);
+            items.forEach(items =>{                                        //for each individual entry in the parsed json data, we do a call back and connect items to it, where then we add the options to the dropdown menu, and do it in that one way with the backticks (i forgot the name sorry) so that i can do the dollar sign thing mwuahah
+                table.innerHTML += `<option image="${items.img}" value="${items.link}">${items.name}</option>`; }, // comma bcz i needa run more stuff after
+                tableThing(0),                                             // RELEASE THE TABLE
+                setTimeout(() => {tableThing(3);}, 0),                     // you dont understand how long this took to fking figure out, i had to commit that cardinal sin of using ai to help me bro... anyways that code is to "Wait for the DOM to update before trying to read the selected option" smh
+                playButton.onclick = () => {                               //holy i use too much callback thingies with the => i love my new learnings
+                    window.location.href = tableSelect.value;              //the only reason why this works is because select elements value value automatically gets changed to the value of the selected option
+            });
+        }
+    )
+};
+
+function tableThing(x){
+    const img = document.getElementById('table-img');                      //select table info and make img equal it
+    const tableSelect = document.getElementById('table-select');           // selects table select   heheh pretty ironic nvm holy im a bad joker
+    const selectedOption = tableSelect.options[tableSelect.selectedIndex]; // gets seleected option based off of the index of table select, using the .selectedIndex inside of the index / array thing idk
+    const table = document.getElementById('table');
+        if(x == 0){  
+            table.classList.remove('hidden');    
+            table.classList.remove('fadeOut');                             // this is for add the the table mode
+            table.classList.add('fadeIn');
+
+        }
+        else if(x == 1){   
+            table.classList.remove('fadeIn');                              //this is for KILL the table mode mwuahhaha
+            table.classList.add('fadeOut');
+        }
+        else{                                                               // this is for change description mode (rn its just an image)
+            const optionsImg = selectedOption.getAttribute('image');        // creates const to be equal to the const of selectedoption's image attribute, using getAttribute(), where it is set to the image attribute
+            img.src = optionsImg;                                           // make src of the table image to be equal to the image attribute in selectedOption or smth i forgot im so tuff at coding 67
+            console.log(optionsImg);
+        }
+}
+
+
+
 function defaultSort(items){                                // no its not the same as the items i declared at the top, its instead the one inside the printit function
     const container = document.querySelector('#contents');
     container.innerHTML = '';                               //clears out the container class
     items.forEach(list => {                                 //we use a back tick to enable to use of template literal or wtv the source said.. anyways now i can pretty much have values i can freely call!! $
         container.innerHTML += `                            
         <a href="${list.link}">
-        <button class="container-content" onClick="handler(${list.mode})">
+        <button class="container-content" onClick="handler(${list.mode}, '${list.tablePath}')">
           <img class="content-img" src="${list.img}"/>
           <span class="content-text">${list.name}</span>
         </button>
