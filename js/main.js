@@ -4,7 +4,7 @@ const wlocation = window.location.pathname;
 document.addEventListener('DOMContentLoaded', function() {
   particles('/js/json/themes/deepwoken.json');
   if( wlocation == '/' || wlocation == '/index.html'){
-    spinSecret(3);                       // spin with a 1/30 chance
+    spinSecret(30);                       // spin with a 1/30 chance
 
   }
   if( wlocation == '/g/' || wlocation == '/g/index.html'){
@@ -36,7 +36,7 @@ function spinSecret(chance){
     particles('/js/json/themes/deepwoken.json');
     if(num == 1){                                                                                       //changes logo to deepwoken logo on a lucky 3
         img.src = '/img/deepwoken.webp';
-        bar.placeholder = 'oooo ~0.03% chance'
+        bar.placeholder = 'oooo ~0.03% chance btw'
     }
 }
 function pickRandom(){                      

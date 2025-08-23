@@ -1,0 +1,3 @@
+# ignore the other stuff in g, mc stays just for testing purposes
+/g/*
+!/g/mc/
