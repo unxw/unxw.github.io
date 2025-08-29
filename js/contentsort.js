@@ -7,10 +7,7 @@ function printIt(x, path){                 //recives a mode number... 1 = defaul
         .then(data => {items = data.list;
             //console.log(items);            //reads name of array 1, remove the box bracket thing and .name to print all
                 if(x == 1){
-                    defaultSort(items);
-                }
-                if(x == 2){
-                    recentlyPlayed(items);
+                    sort(items, x);
                 }
         }
     ) 
@@ -61,7 +58,27 @@ function tableThing(x){
 
 
 
-function defaultSort(items){                                // no its not the same as the items i declared at the top, its instead the one inside the printit function
+function sort(items, x){                        // no its not the same as the items i declared at the top, its instead the one inside the printit function
+    items.sort((a, b) => {                          // we gonna sort the items via the js function called sort() a and b get compared but  we use the => callback thing to connect more stuf fto it and yeah-- thank god for the sort funttion it literally loops for you which is why it can read each entry... oh my god it even picks pairs for you (i named them a and b)
+    // Sort by priority first                       // okay so i searched it up and this is what it said "The => in JavaScript is part of an arrow function, which is a concise way to write a function." yahoo yipeee
+    if (a.priority && !b.priority) {
+      return -1; // -1 means to put a first
+    }
+    if (!a.priority && b.priority) {
+      return 1; // 1 means to puit b first
+    }
+
+    // we sort by popularity next so that it apears after the poriority always... also it does this when both priorities are the same
+    if (a.popular && !b.popular) {
+      return -1; // a comes first because a is popular and b isnt
+    }
+    if (!a.popular && b.popular) {
+      return 1; // b comes first because b is popular and a isnt
+    }
+
+    // 0 means to keep things as is, and this onlly occurs if a priority/popular and b pri/pop are the same
+    return 0;
+  });
     const container = document.querySelector('#contents');
     container.innerHTML = '';                               //clears out the container class
     items.forEach(list => {                                 //we use a back tick to enable to use of template literal or wtv the source said.. anyways now i can pretty much have values i can freely call!! $

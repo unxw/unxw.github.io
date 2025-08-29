@@ -14,7 +14,7 @@
         "link": "https://forms.gle/PEu5TaQJG1Avhufh9",
         "popular": false,
         "priority": true,
-        "mode": 1
+        "mode": 0
         },
         {
         "name": "Unblocked Browser",
@@ -42,13 +42,12 @@
         "tablePath": "/js/json/tables/mc.json"
         },
         {
-        "name": "another table",
+        "name": "Cuphead",
         "img": "/img/done.webp",
-        "link": "#",
+        "link": "/g/cuphead",
         "popular": true,
         "priority": false,
-        "mode": 2,
-        "tablePath": "/js/json/contents.json"
+        "mode": 0
         }
     ]
 }

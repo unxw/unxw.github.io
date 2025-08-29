@@ -1,3 +1,8 @@
 # ignore the other stuff in g, mc stays just for testing purposes
 /g/*
 !/g/mc/
+# ignore old site just need some assets
+/oldsite/
+
+# ignore the web port thing as well i kinda just need to get more assets and im too lazy to drag and drop i want tehm all in my vs code explorer heh
+/web-port/
