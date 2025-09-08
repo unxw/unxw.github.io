@@ -31,8 +31,8 @@ a{
 }
 .container-content{
     margin: 5px;
-    height: 18vh; /*reminder: i put the height and width the same because it has to be a square silly */
-    width: 18vh;
+    height: 20vh; /*reminder: i put the height and width the same because it has to be a square silly */
+    width: 20vh;
     display: flex;
     padding: 0;
     border: 0;
@@ -89,10 +89,10 @@ a{
 }
 
 #pass{
-    width: 50%;
-    height: 3vh;
+    width: 30vw;
+    height: 4vh;
     margin: 0 auto 3vh;
-    font-size: 3.5vh;
+    font-size: 4vh;
     text-align: center;
     background-color: black;
     color: white;
