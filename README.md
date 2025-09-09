@@ -1,4 +1,10 @@
 # nixora.space!!! 💫 (no i havent release the actual site yet just the bio)
+## heres the [roadmap for the site](https://github.com/unxw/unxw.github.io/blob/main/ROADMAP.md)
+## beta 1.3.2 (i forgot to write the other ones mb)
+- changed text of the password bar bcz why not
+- man im just updating my site bcz im bored at school smh
+- i need to actually write up the json that the js reads off to spawn titles
+- add a kinda bad roadmap
 ## beta 1.3 "genuinely a decent upd"
 i feel so goated rn
 - addded a random system that works nicely but i need to add support for tables and make it not touch the forms button

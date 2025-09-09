@@ -73,7 +73,7 @@ function pass() {                                          //super secure passwo
     else{
         document.getElementById('pass').value = '';
         document.getElementById('pass').placeholder = 'wrong password!';
-        alert('dm @camwym on ig or nixora on discord for the pass!\nima remake this alert later ts is lazy');
+        alert('wrong password...\ndm @camwym on ig or nixora on discord for the pass!\nima remake this alert later ts is lazy');
     }
 }
 /* code to add the class to the element
