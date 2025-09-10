@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() { // on window load
 
 //all below is the actual functions
 
-function handler(mode, tPath, path){
+function handler(mode, path, tPath){
     if(mode == 0){
         console.log('normal mode');
         iframeHandler(0, path);
@@ -46,10 +46,15 @@ function pickRandom(){
     fetch(main)
         .then(response => response.json())
         .then(data => {pick = data.list;
-            let num = parseInt(Math.random() * (pick.length-1) + 1);   //add support for table mode sometime
-            console.log(num);
-            console.log(pick[num].link);
-            iframeHandler(0, (pick[num].link));
+            var num = parseInt(Math.random() * (pick.length-1) + 1);   //add support for table mode sometime
+            console.log("list num chosen: "+num);                      //okay i added it yipee yaaaa
+            console.log("corresponding list link: "+pick[num].link);
+            if(pick[num].mode == 2){
+                getTable(pick[num].tablePath);
+            }
+            else{
+                handler(pick[num].mode, pick[num].link);
+            }
         }
     ) 
 } 

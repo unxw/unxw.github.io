@@ -30,8 +30,6 @@ function getTable(path){                                                   //HOL
                 playButton.onclick = () => {                               //holy i use too much callback thingies with the => i love my new learnings
                     tableThing(1)
                     iframeHandler(0, tableSelect.value)              //the only reason why this works is because select elements value value automatically gets changed to the value of the selected option
-                    table.classList.remove('fadeIn');                              
-                    table.classList.add('fadeOut');
             });
         }
     )
@@ -86,7 +84,7 @@ function sort(items, x){                        // no its not the same as the it
     container.innerHTML = '';                               //clears out the container class
     items.forEach(list => {                                 //we use a back tick to enable to use of template literal or wtv the source said.. anyways now i can pretty much have values i can freely call!! 
         container.innerHTML += `                            
-        <button class="container-content" onClick="handler(${list.mode}, '${list.tablePath}', '${list.link}')">
+        <button class="container-content" onClick="handler(${list.mode}, '${list.link}', '${list.tablePath}')">
           <img class="content-img" src="${list.img}"/>
           <span class="content-text">${list.name}</span>
         </button>

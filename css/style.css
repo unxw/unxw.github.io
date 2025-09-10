@@ -211,7 +211,29 @@ a{
     z-index: 2;
     background-color: white;
 }
+.exitFrame{
+    position: fixed;
+    top: 5vh;
+    z-index: 3;
+    left: -1.5%;
+    filter: opacity(35%);
+    transition: 0.15s ease-in;
+}
+.frameExit{
+    height: 3vh;
+    width: 3vh;
+    background-color: #000000;
+    margin: 0;
+    transition: 0.15s ease-in;
+}
 
+.exitFrame:hover{
+    filter: opacity(80%);
+    left: 0;
+}
+.frameExit:hover{
+    transform: scale(1.1);
+}
 /* all anims for each section stay at the bottom of their part */
 @keyframes fadeIn { /* anim for fadeins*/
     0%{

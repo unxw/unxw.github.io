@@ -1,5 +1,8 @@
 # nixora.space!!! 💫 (no i havent release the actual site yet just the bio)
 ## [heres the roadmap for the site](https://github.com/unxw/unxw.github.io/blob/main/ROADMAP.md)
+## beta 1.4.1 (i love iframes agaiiiin)
+- added a button to escape the iframe thing
+- thats kinda it
 ## beta 1.4 (yipee yaa i love iframes)
 - ok so i added a new iframe handler function
 
