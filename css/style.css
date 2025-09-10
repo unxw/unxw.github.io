@@ -3,6 +3,9 @@ body{
     height: 100%;
     margin: 0;
 }
+iframe{
+    border: none;
+}
 
 a{
     text-decoration: none; /* no one likes that stupid ah blue line under links </3 */
@@ -179,14 +182,34 @@ a{
  
 #play{
     height: 6vh;
-    width: 6vh;           /* i was working on this last */
+    width: 20vh;      
     margin: 5% 5%;
-
+    background-color: rgba(0, 0, 0, 0.40);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    font-family: 'Jua', serif;
+    text-align: center;
+}
+#play:hover {
+    transform: scale(1.04); /* make slight bigger rahhhh*/
+    transition: all 0.1s ease-out;
+    background-color: rgba(83, 83, 83, 0.4);
 }
 
 #table-img{
     height: 55%;
     margin: 3%;
+}
+
+#frame, #gFrame{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
 }
 
 /* all anims for each section stay at the bottom of their part */

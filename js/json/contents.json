@@ -48,6 +48,14 @@
         "popular": true,
         "priority": false,
         "mode": 0
+        },
+        {
+        "name": "Minecraft test single link",
+        "img": "/img/mc.webp",
+        "link": "/g/mc/1.5.2.html",
+        "popular": true,
+        "priority": false,
+        "mode": 0
         }
     ]
 }

@@ -1,7 +1,9 @@
 // event listener and auto load scripts for homepage
+
 var main = '/js/json/contents.json';        // where all the apps are stored... main.
 const wlocation = window.location.pathname;
-document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function() { // on window load
   particles('/js/json/themes/deepwoken.json');
   if( wlocation == '/' || wlocation == '/index.html'){
     spinSecret(30);                       // spin with a 1/30 chance
@@ -15,9 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //all below is the actual functions
 
-function handler(mode, path){
+function handler(mode, tPath, path){
     if(mode == 0){
         console.log('normal mode');
+        iframeHandler(0, path);
     }
     else if(mode == 1){
         console.log('random mode');
@@ -25,7 +28,7 @@ function handler(mode, path){
     }
     else{
         console.log('table mode');
-        getTable(path);
+        getTable(tPath);
     }
 }
 function spinSecret(chance){
@@ -36,7 +39,7 @@ function spinSecret(chance){
     particles('/js/json/themes/deepwoken.json');
     if(num == 1){                                                                                       //changes logo to deepwoken logo on a lucky 3
         img.src = '/img/deepwoken.webp';
-        bar.placeholder = 'oooo ~0.03% chance btw'
+        bar.placeholder = '~0.03% chance btw 0:'
     }
 }
 function pickRandom(){                      
@@ -46,7 +49,7 @@ function pickRandom(){
             let num = parseInt(Math.random() * (pick.length-1) + 1);   //add support for table mode sometime
             console.log(num);
             console.log(pick[num].link);
-            window.location = (pick[num].link);
+            iframeHandler(0, (pick[num].link));
         }
     ) 
 } 
@@ -74,6 +77,21 @@ function pass() {                                          //super secure passwo
         document.getElementById('pass').value = '';
         document.getElementById('pass').placeholder = 'wrong password!';
         alert('wrong password...\ndm @camwym on ig or nixora on discord for the pass!\nima remake this alert later ts is lazy');
+    }
+}
+function iframeHandler(mode, link){
+    const iframe = document.getElementById('gFrame')
+    const frame =  document.getElementById('frame')
+    if(mode == 0){
+        frame.classList.add('fadeIn');
+        frame.classList.remove('hidden');    
+        frame.classList.remove('fadeOut');
+        iframe.src = link;
+    }
+    if(mode == 1){
+        frame.classList.add('fadeOut');
+        frame.classList.remove('fadeIn');
+        iframe.src = "";                    
     }
 }
 /* code to add the class to the element

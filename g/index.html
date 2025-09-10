@@ -14,13 +14,20 @@
 <body>
     <div class="background" id="deepwokenbg"></div>
     <div id="particles-js"></div>
-    <p class="version">b1.3.1</p>
+    <p class="version">b1.4</p>
+
     <div class="container" id="utils">
-        <div class="topBar">
+        <div class="topBar">         
             <h1 style="color: white; text-align: center;">ill add functionality for this later</h1>
         </div>
-        <input type="text" id="pass" placeholder="placeholdeer search bar" oninput="searchBar()"/>
+        <input type="text" id="pass" placeholder="search things..." oninput="searchBar()"/>
     </div>
+
+    <div id="frame" class="hidden">
+        <div class="frameExit"></div>
+        <iframe src="" id="gFrame"></iframe>
+    </div>
+
     <div class="container hidden" id="table">
         <img id="exit" src="/img/close.svg" onclick="tableThing(1)"/>
         <select id="table-select" onchange="tableThing(2)">
@@ -28,7 +35,7 @@
         <img id="table-img" src="#"  >
         <button id="play">Play!</button>
     </div>
-    <div class="container" id="contents">
-    </div>
+
+    <div class="container" id="contents"></div>
 </body>
 </html>

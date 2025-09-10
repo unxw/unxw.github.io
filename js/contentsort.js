@@ -28,7 +28,10 @@ function getTable(path){                                                   //HOL
                 tableThing(0),                                             // RELEASE THE TABLE
                 setTimeout(() => {tableThing(3);}, 0),                     // you dont understand how long this took to fking figure out, i had to commit that cardinal sin of using ai to help me bro... anyways that code is to "Wait for the DOM to update before trying to read the selected option" smh
                 playButton.onclick = () => {                               //holy i use too much callback thingies with the => i love my new learnings
-                    window.location.href = tableSelect.value;              //the only reason why this works is because select elements value value automatically gets changed to the value of the selected option
+                    tableThing(1)
+                    iframeHandler(0, tableSelect.value)              //the only reason why this works is because select elements value value automatically gets changed to the value of the selected option
+                    table.classList.remove('fadeIn');                              
+                    table.classList.add('fadeOut');
             });
         }
     )
@@ -81,17 +84,15 @@ function sort(items, x){                        // no its not the same as the it
   });
     const container = document.querySelector('#contents');
     container.innerHTML = '';                               //clears out the container class
-    items.forEach(list => {                                 //we use a back tick to enable to use of template literal or wtv the source said.. anyways now i can pretty much have values i can freely call!! $
+    items.forEach(list => {                                 //we use a back tick to enable to use of template literal or wtv the source said.. anyways now i can pretty much have values i can freely call!! 
         container.innerHTML += `                            
-        <a href="${list.link}">
-        <button class="container-content" onClick="handler(${list.mode}, '${list.tablePath}')">
+        <button class="container-content" onClick="handler(${list.mode}, '${list.tablePath}', '${list.link}')">
           <img class="content-img" src="${list.img}"/>
           <span class="content-text">${list.name}</span>
         </button>
-      </a>
       `
-    }
-)
+    }  // the general template for each entry. all of the entries have the handler call in it, where it grabs the data from a json and then attatches the following to the function (go down)
+)      // list.mode = the mode that handler will follow    table path is used for when handler needs to call the table function and will pass the json location to it.   link is just so the iframe knows what to put over the screen
 }
 //stupid data command thing has to be forwarded where THEN i can assign it to my empty array items, where THEN inside that stupid forward curvy bracket i can console.log holy moly i hate javascript
 //ok so  according to the internet, since fetch is asynchronous, it apprears that i  cant use it outside the .then block and instead ill just call a function from inside it mwuhaha im so smart

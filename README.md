@@ -1,5 +1,16 @@
 # nixora.space!!! 💫 (no i havent release the actual site yet just the bio)
-## heres the [roadmap for the site](https://github.com/unxw/unxw.github.io/blob/main/ROADMAP.md)
+## [heres the roadmap for the site](https://github.com/unxw/unxw.github.io/blob/main/ROADMAP.md)
+## beta 1.4 (yipee yaa i love iframes)
+- ok so i added a new iframe handler function
+
+basically what is does is that it gets called by the handler(), which passes it the link to the title, and it kinda just iframes everywhere blehhh
+
+anyways i added this because i dont wanna call main.js in every single title just to apply the cloaker, so this is (imo) a better way to do that.
+
+ughhh now i gotta go add all the localstorage stuff dont i..
+- made changes to how my js spawns in the titles
+- fixed up the disgusting play button
+- added a way to escape the scary iframe
 ## beta 1.3.2 (i forgot to write the other ones mb)
 - changed text of the password bar bcz why not
 - man im just updating my site bcz im bored at school smh
