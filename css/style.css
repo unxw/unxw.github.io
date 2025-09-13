@@ -43,6 +43,7 @@ a{
     justify-content: center; /* centers the text over the image */
     border-radius: 20px;
     background-color: black;
+    text-align: center;
 }
 
 .content-img{    /* make da image fit in da box rahhh */
@@ -56,7 +57,7 @@ a{
     font-size: clamp(2vh, 3vh, 5vh); /* clamp just lets u do a min size, prefered, and max. */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* genuinely disgusting math to center the text of in the middle of the image LOL */
+    transform: translate(-50%, -40%); /* tell me why the HELL is it -40% instead of 50 JUST TO CENTER THE TEXT OMFG */
     position: absolute;
     visibility: hidden;
     font-family: 'Jua', sans-serif;
@@ -233,6 +234,17 @@ a{
 }
 .frameExit:hover{
     transform: scale(1.1);
+}
+
+#settings{
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 30px;
+    width: 80vw;
+    height: 90vh;
+    position: fixed;
+    top: 30vh;
 }
 /* all anims for each section stay at the bottom of their part */
 @keyframes fadeIn { /* anim for fadeins*/

@@ -4,6 +4,9 @@ these are all unorder but newest go at top
 
 things at the bottom are finished tho
 ## to do
+- ### fix the side bar for the gframe bruh it works but doesnt work on all screen sizes
+- ### add the crasher. would be under tools section
+- ### add the tools section
 - ### make top bar
 - ### figure out how to port stuff to web still
 - ### upload the site

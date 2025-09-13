@@ -19,7 +19,7 @@
         {
         "name": "Unblocked Browser",
         "img": "/img/done.webp",
-        "link": "#",
+        "link": "/g/ubb",
         "popular": false,
         "priority": true,
         "mode": 0
@@ -50,12 +50,117 @@
         "mode": 0
         },
         {
-        "name": "Minecraft test single link",
-        "img": "/img/mc.webp",
-        "link": "/g/mc/1.5.2.html",
+        "name": "Temple Run 2",
+        "img": "/img/done.webp",
+        "link": "/g/temple-run-2",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Tanuki Sunset",
+        "img": "/img/done.webp",
+        "link": "tenuki-sunset",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Sort the Court",
+        "img": "/img/done.webp",
+        "link": "/g/stc",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Spelunky",
+        "img": "/img/done.webp",
+        "link": "/g/spelunky",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Slope",
+        "img": "/img/done.webp",
+        "link": "/g/slope",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Run 3",
+        "img": "/img/done.webp",
+        "link": "/g/run3",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Mario",
+        "img": "/img/done.webp",
+        "link": "/g/mario",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Townscaper",
+        "img": "/img/done.webp",
+        "link": "/g/townscaper",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Mario 64 Web",
+        "img": "/img/done.webp",
+        "link": "/g/M64js-main",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Cookie Clicker",
+        "img": "/img/done.webp",
+        "link": "#",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Bitlife",
+        "img": "/img/done.webp",
+        "link": "#",
         "popular": true,
         "priority": false,
         "mode": 0
+        },
+        {
+        "name": "Basketball Stars",
+        "img": "/img/done.webp",
+        "link": "/g/basketball-stars",
+        "popular": true,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "2048",
+        "img": "/img/done.webp",
+        "link": "/g/2048",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Worst Time Simulator",
+        "img": "/img/done.webp",
+        "link": "/g/wts",
+        "popular": false,
+        "priority": false,
+        "mode": 0
         }
+
     ]
 }

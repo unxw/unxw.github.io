@@ -1,5 +1,11 @@
 # nixora.space!!! 💫 (no i havent release the actual site yet just the bio)
 ## [heres the roadmap for the site](https://github.com/unxw/unxw.github.io/blob/main/ROADMAP.md)
+## beta 1.5 the not so secure security
+- alright so i added a crasher... will be implemented later
+- obfuscated the password system, stil not secure tho, any of yall who knows what you're doing could easily get it lol (and i hope you do)
+- centered the text of the entry tests a little bcz it was a little off
+- moved the password function out of main
+- added a bunch of the entries into content.json
 ## beta 1.4.1 (i love iframes agaiiiin)
 - added a button to escape the iframe thing
 - thats kinda it
