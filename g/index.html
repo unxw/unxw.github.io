@@ -8,17 +8,20 @@
     <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="icon" id="favicon" type="image/x-icon" href="/img/googleicon.webp"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
     <title>Google</title>
 </head>
 <body>
     <div class="background" id="deepwokenbg"></div>
     <div id="particles-js"></div>
-    <p class="version">b1.5</p>
+    <p class="version">b1.6</p>
 
     <div class="container" id="utils">
         <div class="topBar">         
-            <h1 style="color: white; text-align: center;">ill add functionality for this later</h1>
+            <img src = "/img/home.svg" onclick="location.href='/'"/>
+            <img src = "/img/tools.svg" onclick="getTable('/js/json/tables/tools.json')"/>
+            <img src = "/img/blep.webp" id="blep"/>
+            <img src = "/img/settings.svg" onclick="window.alert('ill implement this later bruhhh')"/>
+            <img src = "/img/info.svg" onclick="location.href='https://github.com/unxw/'"/>
         </div>
         <input type="text" id="pass" placeholder="search things..." oninput="searchBar()"/>
     </div>

@@ -1,5 +1,15 @@
-# ignore the other stuff in g, mc stays just for testing purposes
-/g/mc/*
-
+# ignore MOST stuff in g
+/g/*
+!/g/flash/
+!/g/crasher/
 #the unobfuscated password function wooooo
 /js/passUnob.js
+
+#ignore web port
+/web-port/
+
+#ignore the flash files
+/g/flash/games/
+
+#ignore bs code settings
+/.vscode/

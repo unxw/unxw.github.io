@@ -1,0 +1,82 @@
+{
+    "list":[
+        {
+        "name": "Papa's Pizzeria",
+        "img": "/img/pizzeria.webp",
+        "link": "/g/flash#/papas/papaspizzeria_v2.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Bakeria",
+        "img": "/img/bakeria.webp",
+        "link": "/g/flash#/papas/papasbakeria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Cheeseria",
+        "img": "/img/cheeseria.webp",
+        "link": "/g/flash#/papas/papascheeseria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Cupcakeria",
+        "img": "/img/cupcakeria.webp",
+        "link": "/g/flash#/papas/papascupcakeria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Donuteria",
+        "img": "/img/donuteria.webp",
+        "link": "/g/flash#/papas/papasdonuteria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Freezeria",
+        "img": "/img/freezeria.webp",
+        "link": "/g/flash#/papas/papasfreezeria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Hot Doggeria",
+        "img": "/img/hotdoggeria.webp",
+        "link": "/g/flash#/papas/papashotdoggeria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Pancakeria",
+        "img": "/img/pancakeria.webp",
+        "link": "/g/flash#/papas/papaspancakeria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Pastaria",
+        "img": "/img/pastaria.webp",
+        "link": "/g/flash#/papas/papaspastaria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Scooperia",
+        "img": "/img/scooperia.webp",
+        "link": "/g/flash#/papas/papasscooperia.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Sushiria",
+        "img": "/img/sushiria.webp",
+        "link": "/g/flash#/papas/papassushiria.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Tacomia",
+        "img": "/img/tacomia.webp",
+        "link": "/g/flash#/papas/papastacomia.swf",
+        "mode": 0
+        },
+        {
+        "name": "Papa's Wingeria",
+        "img": "/img/wingeria.webp",
+        "link": "/g/flash#/papas/papaswingeria.swf",
+        "mode": 0
+        }
+    ]
+ }

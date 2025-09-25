@@ -9,7 +9,6 @@
     <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="icon" id="favicon" type="image/x-icon" href="/img/googleicon.webp"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
     <title>Google</title>
 </head>
 <body>
@@ -18,8 +17,8 @@
     <a href="https://github.com/unxw/unxw.github.io"><img src="/img/github.svg" alt="GitHub" id="icon" width="50vw" height="50vh" style="padding: 5px;"/></a> <!-- ughhh i hate adding styles that are in the html but adding this to the css would be just as useless-->
     <div class="container" id="title" >
         <img class="titleimg" src="/img/logo.webp" alt="title" />
-        <input type="password" id="pass" placeholder="password pls" onkeypress="if(event.key == 'Enter'){pass();}"/> <!-- event listener for keypress of enter -->
+        <input type="password" id="pass" placeholder="password pls" autocomplete="off" onkeypress="if(event.key == 'Enter'){pass();}"/> <!-- event listener for keypress of enter -->
     </div>
-    <p class="version">b1.5</p>
+    <p class="version">b1.6</p>
 </body>
 </html>

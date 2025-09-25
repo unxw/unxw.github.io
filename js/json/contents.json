@@ -18,7 +18,7 @@
         },
         {
         "name": "Unblocked Browser",
-        "img": "/img/done.webp",
+        "img": "/img/ubb.webp",
         "link": "/g/ubb",
         "popular": false,
         "priority": true,
@@ -26,8 +26,8 @@
         },
         {
         "name": "Deltarune",
-        "img": "/img/done.webp",
-        "link": "#",
+        "img": "/img/deltarune.webp",
+        "link": "/g/deltarune",
         "popular": true,
         "priority": false,
         "mode": 0
@@ -43,7 +43,7 @@
         },
         {
         "name": "Cuphead",
-        "img": "/img/done.webp",
+        "img": "/img/cuphead.webp",
         "link": "/g/cuphead",
         "popular": true,
         "priority": false,
@@ -51,7 +51,7 @@
         },
         {
         "name": "Temple Run 2",
-        "img": "/img/done.webp",
+        "img": "/img/templerun2.webp",
         "link": "/g/temple-run-2",
         "popular": false,
         "priority": false,
@@ -59,15 +59,15 @@
         },
         {
         "name": "Tanuki Sunset",
-        "img": "/img/done.webp",
-        "link": "tenuki-sunset",
+        "img": "/img/tanukisunset.webp",
+        "link": "/g/tanuki-sunset",
         "popular": false,
         "priority": false,
         "mode": 0
         },
         {
         "name": "Sort the Court",
-        "img": "/img/done.webp",
+        "img": "/img/sort.webp",
         "link": "/g/stc",
         "popular": false,
         "priority": false,
@@ -83,7 +83,7 @@
         },
         {
         "name": "Slope",
-        "img": "/img/done.webp",
+        "img": "/img/slope.webp",
         "link": "/g/slope",
         "popular": false,
         "priority": false,
@@ -91,7 +91,7 @@
         },
         {
         "name": "Run 3",
-        "img": "/img/done.webp",
+        "img": "/img/run3.webp",
         "link": "/g/run3",
         "popular": false,
         "priority": false,
@@ -99,7 +99,7 @@
         },
         {
         "name": "Mario",
-        "img": "/img/done.webp",
+        "img": "/img/mario.webp",
         "link": "/g/mario",
         "popular": false,
         "priority": false,
@@ -107,7 +107,7 @@
         },
         {
         "name": "Townscaper",
-        "img": "/img/done.webp",
+        "img": "/img/townscaper.webp",
         "link": "/g/townscaper",
         "popular": false,
         "priority": false,
@@ -115,31 +115,31 @@
         },
         {
         "name": "Mario 64 Web",
-        "img": "/img/done.webp",
+        "img": "/img/mario64.webp",
         "link": "/g/M64js-main",
         "popular": false,
         "priority": false,
         "mode": 0
         },
         {
-        "name": "Cookie Clicker",
-        "img": "/img/done.webp",
-        "link": "#",
-        "popular": false,
-        "priority": false,
-        "mode": 0
-        },
-        {
         "name": "Bitlife",
-        "img": "/img/done.webp",
-        "link": "#",
+        "img": "/img/bitlife.webp",
+        "link": "/g/bitlife",
         "popular": true,
         "priority": false,
         "mode": 0
         },
         {
+        "name": "Drift Hunters",
+        "img": "/img/drifthunters.webp",
+        "link": "/g/drift-hunters",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
         "name": "Basketball Stars",
-        "img": "/img/done.webp",
+        "img": "/img/basketballstars.webp",
         "link": "/g/basketball-stars",
         "popular": true,
         "priority": false,
@@ -147,7 +147,7 @@
         },
         {
         "name": "2048",
-        "img": "/img/done.webp",
+        "img": "/img/2048.webp",
         "link": "/g/2048",
         "popular": false,
         "priority": false,
@@ -155,12 +155,167 @@
         },
         {
         "name": "Worst Time Simulator",
-        "img": "/img/done.webp",
-        "link": "/g/wts",
+        "img": "/img/wts.webp",
+        "link": "/g/wts/index.html",
         "popular": false,
         "priority": false,
         "mode": 0
+        },
+        {
+        "name": "Balatro",
+        "img": "/img/balatro.webp",
+        "link": "/g/balatro",
+        "popular": true,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Baldi Plus",
+        "img": "/img/baldisplus.webp",
+        "link": "/g/baldi-plus",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Baldi Classic",
+        "img": "/img/baldiclassic.webp",
+        "link": "/g/baldi-remaster",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Buckshot Roulette",
+        "img": "/img/buckshotroulette.webp",
+        "link": "/g/buckshot-roulette",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "FNAF Games",
+        "img": "/img/fnaf.webp",
+        "link": "#",
+        "popular": false,
+        "priority": false,
+        "mode": 2,
+        "tablePath": "/js/json/tables/fnaf.json"
+        },
+        {
+        "name": "Kindergarten",
+        "img": "/img/kindergarden.webp",
+        "link": "#",
+        "popular": false,
+        "priority": false,
+        "mode": 2,
+        "tablePath": "/js/json/tables/kindergarten.json"
+        },
+        {
+        "name": "Omori",
+        "img": "/img/omori.webp",
+        "link": "/g/omoriport",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "People Playground",
+        "img": "/img/peopleplayground.webp",
+        "link": "/g/people-playground",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Pizza Tower",
+        "img": "/img/pizzatower.webp",
+        "link": "/g/pizza-tower",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Raft",
+        "img": "/img/raft.webp",
+        "link": "/g/raft",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Speed Stars",
+        "img": "/img/speedstars.webp",
+        "link": "/g/speed-stars",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Undertale",
+        "img": "/img/undertale.webp",
+        "link": "/g/undertale",
+        "popular": true,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Undertale Yellow",
+        "img": "/img/undertaleyellow.webp",
+        "link": "/g/speed-stars",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Web Fishing",
+        "img": "/img/webfishing.webp",
+        "link": "/g/web-fishing",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Binding of Isaac: WOTL",
+        "img": "/img/boiwotl.webp",
+        "link": "/g/flash#/bindingofisaac/boiwotl.swf",
+        "popular": false,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Papa's Cooking Games",
+        "img": "/img/pizzeria.webp",
+        "link": "#",
+        "popular": false,
+        "priority": false,
+        "mode": 2,
+        "tablePath": "/js/json/tables/papas.json"
+        },
+        {
+        "name": "Ultrakill",
+        "img": "/img/ultrakill.webp",
+        "link": "/g/ultrakill",
+        "popular": true,
+        "priority": false,
+        "mode": 0
+        },
+        {
+        "name": "Riddle School",
+        "img": "/img/riddletransfer.webp",
+        "link": "#",
+        "popular": false,
+        "priority": false,
+        "mode": 2,
+        "tablePath": "/js/json/tables/riddleSchool.json"
+        },
+        {
+        "name": "ill add more later if im not lazy",
+        "img": "/img/comingsoon.webp",
+        "link": "blehhh im rigby",
+        "popular": false,
+        "priority": false,
+        "mode": 4
         }
-
     ]
 }

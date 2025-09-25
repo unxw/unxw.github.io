@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', function() { // on window load
   if( wlocation == '/g/' || wlocation == '/g/index.html'){
     printIt(1, main); //calls the printIt function with 1 as the mode so it does default
   }
+  
   confirmation();
 });
+
 
 //all below is the actual functions
 
@@ -26,9 +28,17 @@ function handler(mode, path, tPath){
         console.log('random mode');
         pickRandom();
     }
-    else{
+    else if (mode == 2){
         console.log('table mode');
         getTable(tPath);
+    }
+    else if (mode == 3){
+        console.log('js mode');
+        eval(path); //evals the js code in the link section
+
+    }
+    else{
+        console.log('error: invalid mode selection; doing nothing\n\n'+path);
     }
 }
 function spinSecret(chance){
@@ -75,13 +85,16 @@ function iframeHandler(mode, link){
     const iframe = document.getElementById('gFrame')
     const frame =  document.getElementById('frame')
     if(mode == 0){
+        document.body.classList.add('no-scroll');
         frame.classList.add('fadeIn');
         frame.classList.remove('hidden');    
         frame.classList.remove('fadeOut');
         iframe.src = link;
+        iframe.focus();                     //brings iframe into focus so that inputs aren't sent THROUGH the iframe
         console.log('%ciframe location:' + iframe.src, 'color: #ffc4f3; font-size: 20px;')
     }
     if(mode == 1){
+        document.body.classList.remove('no-scroll');
         frame.classList.add('fadeOut');
         frame.classList.remove('fadeIn');
         iframe.src = "";                    

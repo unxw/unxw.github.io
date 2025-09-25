@@ -1,5 +1,15 @@
 # nixora.space!!! 💫 (no i havent release the actual site yet just the bio)
 ## [heres the roadmap for the site](https://github.com/unxw/unxw.github.io/blob/main/ROADMAP.md)
+## beta 1.6 the mega update
+- made slight changes to iframe handler to deal with some entries not working and instead sending inputs to the site behind it
+- added ruffle
+- added ALL the icons (for now)
+- changed how i load the font for performace sake (yeahhh i needa fix the performace its lowk laggy at load)
+- added the scary crasher of doom
+- added the flash hander its sooo tuff
+- added a few new things to main.js
+- made a bunch of tables for the other entries
+- thats it but this took forver since there's so much entries under the content json
 ## beta 1.5 the not so secure security
 - alright so i added a crasher... will be implemented later
 - obfuscated the password system, stil not secure tho, any of yall who knows what you're doing could easily get it lol (and i hope you do)

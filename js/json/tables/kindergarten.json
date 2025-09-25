@@ -1,0 +1,16 @@
+{
+    "list":[
+        {
+        "name": "Kindergarten 1",
+        "img": "/img/kindergarden.webp",
+        "link": "/g/kindergarten/1/",
+        "mode": 0
+        },
+        {
+        "name": "Kindergarten 2",
+        "img": "/img/kindergarden2.webp",
+        "link": "/g/kindergarten/2/",
+        "mode": 0
+        }
+    ]
+ }

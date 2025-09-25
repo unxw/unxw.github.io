@@ -4,56 +4,42 @@
         "name": "1.12.2 ⭐",
         "img": "/img/1.12.2.webp",
         "link": "/g/mc/1.12.2.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         },
         {
         "name": "1.8.8 ⭐",
         "img": "/img/1.8.8.webp",
         "link": "/g/mc/1.8.8.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         },
         {
         "name": "1.5.2",
         "img": "/img/1.5.2.webp",
         "link": "/g/mc/1.5.2.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         },
         {
         "name": "b1.7.3",
         "img": "/img/b1.7.3.webp",
         "link": "/g/mc/b1.7.3.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         },
         {
         "name": "b1.3",
         "img": "/img/b1.3.webp",
         "link": "/g/mc/b1.3.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         },
         {
         "name": "a1.2.6",
         "img": "/img/a1.2.6.webp",
         "link": "/g/mc/a1.2.6.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         },
         {
         "name": "indev Version",
         "img": "/img/indev.webp",
         "link": "/g/mc/indev.html",
-        "popular": false,
-        "priority": true,
         "mode": 0
         }
     ]

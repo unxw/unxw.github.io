@@ -1,0 +1,58 @@
+{
+    "list":[
+        {
+        "name": "FNAF 1",
+        "img": "/img/fnaf.webp",
+        "link": "/g/fnaf/1/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF 2",
+        "img": "/img/fnaf2.webp",
+        "link": "/g/fnaf/2/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF 3",
+        "img": "/img/fnaf3.webp",
+        "link": "/g/fnaf/3/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF 4",
+        "img": "/img/fnaf4.webp",
+        "link": "/g/fnaf/4/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF 4 Halloween",
+        "img": "/img/fnaf4halloween.webp",
+        "link": "/g/fnaf/4-halloween/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF Pizzeria Simulator",
+        "img": "/img/fnafps.webp",
+        "link": "/g/fnaf/ps/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF Sister Location",
+        "img": "/img/fnafsl.webp",
+        "link": "/g/fnaf/sl/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF Ultimate Custom Night",
+        "img": "/img/fnafucn.webp",
+        "link": "/g/fnaf/ucn/",
+        "mode": 0
+        },
+        {
+        "name": "FNAF World",
+        "img": "/img/fnafworld.webp",
+        "link": "/g/fnaf/w/",
+        "mode": 0
+        }
+    ]
+ }
