@@ -301,6 +301,14 @@
         "mode": 0
         },
         {
+        "name": "Hollow Knight",
+        "img": "/img/hollowknight.webp",
+        "link": "/g/hollowknight",
+        "popular": true,
+        "priority": false,
+        "mode": 0
+        },
+        {
         "name": "Riddle School",
         "img": "/img/riddletransfer.webp",
         "link": "#",
